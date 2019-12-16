@@ -34,7 +34,7 @@
 
                           var result = this.responseText;
 
-                          location.href = "/view/admin_station_erstellen.php";    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
+                          location.href = "/view/schuelerAuswertung.php?schuelerid=";    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
                      }
                 };
 
