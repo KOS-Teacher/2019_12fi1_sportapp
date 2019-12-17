@@ -11,7 +11,6 @@
 
 
     <!-- AJAX mit PHP Integration -->
-
     <script type="text/javascript" src="../js/loginschueler.js"></script>
 
 </head>
