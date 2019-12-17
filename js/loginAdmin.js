@@ -5,24 +5,34 @@
             console.log("hiiiiiiiiiiiiiii")
 
             var txtPasswort = document.getElementById("txtPasswort").value;
-            var cboStation = document.getElementById("txtPasswort").value;
+            var cboStation = document.getElementById("cboStation");
+            var station = cboStation.options[cboStation.selectedIndex].value;
             
 
-           if (txtlogin.length == 0) {
+           if (txtPasswort.length == 0) {
 
              console.log("00000");
-             
 
-              document.getElementById("txtLogin").innerHTML = "qqqqq";
 
               return;
 
-           } else {
+           } 
+           else {
 
                
              console.log("111");
 
-             location.href ="admin_station_erstellen.php"; //"./view/admin_station_erstellen.php";
+             if (station == "Admin"){
+              location.href ="admin_menu.php"; //"./view/admin_station_erstellen.php"
+            } 
+            
+            
+            
+            else{
+
+            
+
+             //location.href ="admin_station_erstellen.php"; //"./view/admin_station_erstellen.php";
 
                var xmlhttp = new XMLHttpRequest();
 
@@ -37,11 +47,13 @@
 
                         location.href = "/view/schuelerAuswertung.php?schuelerid=";    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
                    }
-              };
+                  }
+              }
+            };
 
               xmlhttp.open("GET", "getlogin.php?q=" + txtlogin, true);
 
               xmlhttp.send();
 
         }
-      }
+      

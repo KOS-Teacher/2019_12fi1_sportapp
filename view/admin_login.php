@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- AJAX mit PHP Integration -->
+    <script type="text/javascript" src="../js/loginAdmin.js"></script>
 </head>
 
 <body>
