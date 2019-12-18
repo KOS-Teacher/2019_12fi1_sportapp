@@ -2,17 +2,17 @@
 
           function loginSchueler() {
 
-              console.log("hiiiiiiiiiiiiiii")
-
-              var txtlogin = document.getElementById("txtLogin").value;
               
 
-             if (txtlogin.length == 0) {
+              var schulerid = document.getElementById("txtLogin").value;
+              
 
-               console.log("00000");
-               
+             if (schulerid.length == 0) {
 
-                document.getElementById("txtLogin").innerHTML = "qqqqq";
+              
+              
+
+               window.alert("Nummer darf nicht leer sein!");
 
                 return;
 
@@ -21,7 +21,13 @@
                  
                console.log("111");
 
-               location.href ="admin_station_erstellen.php"; //"./view/admin_station_erstellen.php";
+
+
+               location.href ="schuelerUebersicht.php/?SchuelerNummer=1" + schulerid + "&SchuelerKlasse=2" + 2 + "&SchuelerPunkte=3" + 3 + "&KlasseRang=4" + 4 + "&BestePunkte=5" + 5;
+
+
+
+
 
                  var xmlhttp = new XMLHttpRequest();
 
@@ -29,16 +35,14 @@
 
                      if (this.readyState == 4 && this.status == 200) {
 
-                          //document.getElementById("txtHint").innerHTML = this.responseText;
-                          // Linken zur Seite "Schüler Auswertung" und Daten von PHP da zeigen
-
+                          
                           var result = this.responseText;
 
-                          location.href = "/view/schuelerAuswertung.php?schuelerid=";    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
+                         // location.href ="schuelerUebersicht.php?SchuelerNummer=" + 1 + "&SchuelerKlasse=" + 2 + "&SchuelerPunkte=" + 3 + "&KlasseRang=" + 4 + "&BestePunkte=" + 5;
                      }
                 };
 
-                xmlhttp.open("GET", "getlogin.php?q=" + txtlogin, true);
+                xmlhttp.open("POST", "getlogin.php?sch=" + schulerid, true);   // <------- PHP mit schulerid
 
                 xmlhttp.send();
 

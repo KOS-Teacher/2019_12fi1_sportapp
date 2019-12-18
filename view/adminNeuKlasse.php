@@ -11,7 +11,7 @@
 
 
     <!-- AJAX mit PHP Integration -->
-    <script type="text/javascript" src="../js/adminStationErstellen.js"></script>
+    <script type="text/javascript" src="../js/adminNeueKlasse.js"></script>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                 <input
                     class="form-control" type="number" id="txtAnzahlSchueler" style="width: 70px;float: right;">
                     <div style="clear: both;height: 50px;"></div>
-                    <div><button class="btn btn-red" id="btnVerwerfen" type="button" style="width: 100px;">Verwerfen</button><button class="btn btn-green" id="btnSpeichern" type="button" style="width: 99px;">Speichern</button></div>
+                    <div><button class="btn btn-red" id="btnVerwerfen" onclick="Verwerfen()" type="button" style="width: 100px;">Verwerfen</button><button class="btn btn-green" id="btnSpeichern" onclick="Speichern()" type="button" style="width: 99px;">Speichern</button></div>
             </form>
         </div>
     </main>

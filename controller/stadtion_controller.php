@@ -1,6 +1,7 @@
 <?php
   require("../class/station.php");
 
+
   function delete() {
       $station = new Station();
       $station->removeStation($_POST['id_station']);
