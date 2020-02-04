@@ -6,6 +6,13 @@ function bestaetigen() {
 
     var txtSchuelerIDKrank = document.getElementById("txtSchuelerIDKrank").value;
 
+    if(txtSchuelerIDKrank.lenght == 0){
+       wondows.alert("Die Nummer darf nicht leer sein!");
+    }
+    else{
+
+    
+
        var xmlhttp = new XMLHttpRequest();
 
        xmlhttp.onreadystatechange = function() {
@@ -23,5 +30,6 @@ function bestaetigen() {
       xmlhttp.open("GET", "getlogin.php?q=" + txtSchuelerIDKrank);
 
       xmlhttp.send();
+     }
 
 }

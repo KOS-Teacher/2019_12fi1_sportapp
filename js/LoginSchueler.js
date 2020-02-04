@@ -2,15 +2,11 @@
 
           function loginSchueler() {
 
-              
-
               var schulerid = document.getElementById("txtLogin").value;
               
 
              if (schulerid.length == 0) {
 
-              
-              
 
                window.alert("Nummer darf nicht leer sein!");
 
@@ -21,12 +17,7 @@
                  
                console.log("111");
 
-
-
-               location.href ="schuelerUebersicht.php/?SchuelerNummer=1" + schulerid + "&SchuelerKlasse=2" + 2 + "&SchuelerPunkte=3" + 3 + "&KlasseRang=4" + 4 + "&BestePunkte=5" + 5;
-
-
-
+               location.href ="schuelerUebersicht.php/?SchuelerNummer=1" + 1 + "&SchuelerKlasse=2" + 2 + "&SchuelerPunkte=3" + 3 + "&KlasseRang=4" + 4 + "&BestePunkte=5" + 5;
 
 
                  var xmlhttp = new XMLHttpRequest();

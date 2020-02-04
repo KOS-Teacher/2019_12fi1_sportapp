@@ -1,10 +1,9 @@
 
-
           function admStation() {
 
             console.log("hiiiiiiiiiiiiiii")
 
-             
+            location.href = "stationen.php";
 
                var xmlhttp = new XMLHttpRequest();
 
@@ -14,9 +13,23 @@
 
                         
 
-                        var result = this.responseText;
+                        //var result = this.responseText;     // JSON mit Stationen
 
-                        location.href = "/view/stationen.php?schuelerid=" + responseText;    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
+
+                        var myArr = JSON.parse(this.responseText);
+                        
+
+                        var out = "";
+                        var i;
+                        for(i = 0; i < myArr.length; i++) {
+                            out += '=station' + i + myArr[i].url;
+                        }
+
+
+
+
+
+                        location.href = "stationen.php?" + out;    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
                    }
               };
 
@@ -25,6 +38,23 @@
               xmlhttp.send();
 
         }
+        
+
+        
+        function myFunction(arr) {
+            var out = "";
+            var i;
+            for(i = 0; i < arr.length; i++) {
+                out += '<a href="' + arr[i].url + '">' +
+                arr[i].display + '</a><br>';
+            }
+            document.getElementById("id01").innerHTML = out;
+        }
+
+
+
+
+
 
         
       
@@ -32,7 +62,7 @@
 
           console.log("hiiiiiiiiiiiiiii")
   
-          location.href = "/view/admin_klasse_verwalten.php";
+          location.href = "admin_klasse_verwalten.php";
            
 
       }
@@ -52,7 +82,7 @@
 
           console.log("hiiiiiiiiiiiiiii")
   
-          location.href = "/view/krankMeldung.php";
+          location.href = "krankMeldung.php";
            
 
       }

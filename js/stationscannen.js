@@ -38,15 +38,15 @@
  function absenden() {
 
 
-   if (txtSchuelerNr1.length == 0 && txtSchuelerNr2.length == 0 || txtSchuelerNr3.length == 0 || txtSchuelerNr4.length == 0 || txtSchuelerNr5.length == 0) {
+   //if (document.getElementById("txtSchuelerNr1").value == ""){         // && txtSchuelerNr2.innerText.length == 0 && txtSchuelerNr3.innerText.length == 0 && txtSchuelerNr4.innerText.length == 0 && txtSchuelerNr5.innerText.length == 0) {
 
-     window.alert("Nummer darf nicht leer sein!");
+     //window.alert("Nummer darf nicht leer sein!");
 
-      return;
+      //return;
 
-   } else {
+   //} else {
 
-    location.href ="admin_login.php";
+    location.href ="admin_menu.php";
     
        var xmlhttp = new XMLHttpRequest();
 
@@ -57,7 +57,7 @@
                 
                 var result = this.responseText;
 
-                location.href ="admin_login.php";
+                location.href ="admin_menu.php";
            }
       };
 
@@ -65,7 +65,7 @@
 
       xmlhttp.send();
 
-}
+//}
 }
 
 
