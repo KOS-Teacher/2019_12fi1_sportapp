@@ -6,7 +6,7 @@ use sporttag;
 -- Create Tables
 CREATE TABLE IF not EXISTS Administrator (
     Admin_ID int PRIMARY KEY AUTO_INCREMENT, 
-    Admin_passwort varchar(225)
+    Admin_Passwort varchar(225)
 
 );
 
@@ -21,8 +21,8 @@ CREATE TABLE IF not EXISTS Station (
     Station_Punkte int,
 	Station_Ort varchar(225),
     Station_Zeitpunkt_von DateTime,
-    Station_zeitpunkt_bis datetime,
-    station_passwort varchar(225)
+    Station_Zeitpunkt_bis datetime,
+    Station_Passwort varchar(225)
 );
 
 -- einträge um zu testen 
@@ -51,7 +51,7 @@ CREATE TABLE IF not EXISTS schuelerAuswertung (
     TimeStamp datetime,
     FOREIGN KEY (Schueler_ID) REFERENCES Schueler(Schueler_ID),
 	FOREIGN KEY (Station_ID) REFERENCES Station(Station_ID),
-    primary key(Schueler_ID, Station_ID)
+    primary key(Schueler_ID, Station_ID, Timestamp)
 ); 
 
 
