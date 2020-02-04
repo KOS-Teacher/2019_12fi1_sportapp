@@ -6,64 +6,26 @@
 
 
 
-      //   // Test1
+     // Test1
         
-      //   var stationtext = '{ "stationen" : [' +
+      // var testobj = '{ "stationen" : [' +
       //              '{ "station":"John"},' +
       //              '{ "station":"Anna"},' +
       //              '{ "station":"Peter"} ]}';
+     
 
+      //          var jsonobj = JSON.parse(testobj);       
 
-      //   var stationObj = JSON.parse(stationtext);
+      //          var cboStation = document.getElementById("cboStation");
+             
 
-      //   var cboStation = document.getElementById("cboStation");
-
-        
-
-      //   for(j = 0; j < stationObj.stationen.length; j++){    // i in stationObj)
-           
-      //     // cboStation.options.length = 0;
-
-      //     // cboStation.options[cboStation.options.length] = new Option(jsonArray2[index], index);
-
-      //    // 
-          
-      //     var t = document.createElement("option")
-      //     t.value = stationObj.stationen[j].station; //jsonArray2[i];
-      //     //j = j + 1;
-      //     t.textContent = t.value;
-      //     cboStation.append(t)
-          
-         
-      //  }
+      //         for(j = 0; j < jsonobj.stationen.length; j++){     
+      //             var t = document.createElement("option")
+      //             t.value = jsonobj.stationen[j].station; 
+      //             t.textContent =  t.value;
+      //             cboStation.append(t);
+      //          }
   
-
-
-
-
-
-
-
-      //   // Test2
-
-      //   var jsonArray2 = ["steinam", "milena", "Katze"];
-
-      //   var cboStation = document.getElementById("cboStation");      //innerHTML;
-
-
-      //   for(i in jsonArray2){
-           
-      //     // cboStation.options.length = 0;
-
-      //     // cboStation.options[cboStation.options.length] = new Option(jsonArray2[index], index);
-
-      //    // 
-
-      //     var t = document.createElement("option")
-      //     t.value = jsonArray2[i];
-      //     t.textContent = t.value;
-      //     cboStation.append(t)
-      //  }
 
 
 
@@ -74,19 +36,12 @@
               
 
                var result = this.responseText;
-     
-
-               var jsonobj = JSON.parse(this.responseText);
 
 
-               //var jsonArray = [];
+               var jsonobj = JSON.parse(result);
 
-                //for(var i in jsonobj)      jsonArray.push([i, jsonArray [i]]);
-      
-                 
 
-                
-                //var jsonArray2 = ["steinam", "milena", "Katze"];
+               
 
                 var cboStation = document.getElementById("cboStation").innerHTML;
              
