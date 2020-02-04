@@ -27,7 +27,7 @@ function bestaetigen() {
            }
       };
 
-      xmlhttp.open("GET", "getlogin.php?q=" + txtSchuelerIDKrank);
+      xmlhttp.open("GET", "getlogin_controller.php?q=" + txtSchuelerIDKrank);
 
       xmlhttp.send();
      }

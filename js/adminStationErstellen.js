@@ -12,7 +12,7 @@
 
           
 
-          xmlhttp.open("GET", "getlogin.php?q=" + txtAnzahlSchueler + txtKlasseName);
+          xmlhttp.open("GET", "getlogin_controller.php?q=" + txtAnzahlSchueler + txtKlasseName);
 
           xmlhttp.send();
 

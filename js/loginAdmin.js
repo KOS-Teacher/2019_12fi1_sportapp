@@ -56,7 +56,7 @@
           }
          }
 
-         xmlhttp.open("GET", "getlogin.php?q=" + "allestationen");
+         xmlhttp.open("GET", "getlogin_controller.php?q=" + "allestationen");
 
          xmlhttp.send();
 
@@ -105,7 +105,7 @@
               }
             
 
-              xmlhttp.open("GET", "getlogin.php?q=" + txtPasswort + station);
+              xmlhttp.open("GET", "getlogin_controller.php?q=" + txtPasswort + station);
 
               xmlhttp.send();
 

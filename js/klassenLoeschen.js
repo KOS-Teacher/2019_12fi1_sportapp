@@ -18,7 +18,7 @@ function del() {
            }
       };
 
-      xmlhttp.open("GET", "getlogin.php?q=" + "delete" + txtKlasseName);
+      xmlhttp.open("GET", "getlogin_controller.php?q=" + "delete" + txtKlasseName);
 
       xmlhttp.send();
 

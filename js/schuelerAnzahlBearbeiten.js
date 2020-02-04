@@ -49,7 +49,7 @@ klassen.forEach(myFunction);
                        }
                   };
     
-                  xmlhttp.open("GET", "getlogin.php?q=" +  strUser +  txtSchuelerAnzahl);
+                  xmlhttp.open("GET", "getlogin_controller.php?q=" +  strUser +  txtSchuelerAnzahl);
     
                   xmlhttp.send();
     

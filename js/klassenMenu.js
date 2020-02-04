@@ -34,7 +34,7 @@ function Bearbeiten() {
            }
       };
 
-      xmlhttp.open("GET", "getlogin.php?q=" + "klassen");
+      xmlhttp.open("GET", "getlogin_controller.php?q=" + "klassen");
 
       xmlhttp.send();
 
@@ -63,7 +63,7 @@ function del() {
            }
       };
 
-      xmlhttp.open("GET", "getlogin.php?q=" + "klassen");
+      xmlhttp.open("GET", "getlogin_controller.php?q=" + "klassen");
 
       xmlhttp.send();
 
