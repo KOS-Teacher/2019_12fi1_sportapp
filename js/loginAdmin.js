@@ -6,26 +6,6 @@
 
 
 
-     // Test1
-        
-      // var testobj =  `{ "station_name": "john" , "station_password" : "a"  }`;  //, station_name: Anna , station_password : b, station_name: Peter, station_password : b}`;
-     
-
-      //          var jsonobj = JSON.parse(testobj);       
-
-      //          var cboStation = document.getElementById("cboStation");
-             
-
-      //         for(i in jsonobj) {    //(j = 0; j < jsonobj.length; j++){     
-      //             var t = document.createElement("option")
-      //             t.value =  jsonobj.station_name + " " + jsonobj.station_password ;     //jsonobj.station_name[j] + jsonobj.station_password[j]; 
-      //             t.textContent =  t.value;
-      //             cboStation.append(t);
-      //          }
-  
-
-
-
        var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
 
@@ -43,9 +23,9 @@
                 var cboStation = document.getElementById("cboStation");
              
 
-                for(i in jsonobj){     
+                for(j = 0; j < jsonobj.length; j++){          
                   var t = document.createElement("option")
-                  t.value = jsonobj.station_name;           //stationen[j].station; 
+                  t.value = jsonobj[j].Station_Name;           
                   t.textContent =  t.value;
                   cboStation.append(t)
                }
