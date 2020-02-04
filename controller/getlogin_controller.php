@@ -1,8 +1,8 @@
 <?php
-  require("../class/station.php");
-
-$station->Station_Name = "tolle Station";
-$station->Station_Password = "tolles passwort";
+  require("../class/Station.php");
+  header('Content-type: application/json');
+// $station->Station_Name = "tolle Station";
+// $station->Station_Password = "tolles passwort";
 
 // Mockup-Daten: 
 $station = array(
