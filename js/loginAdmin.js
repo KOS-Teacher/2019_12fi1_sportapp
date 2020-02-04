@@ -43,12 +43,12 @@
 
                
 
-                var cboStation = document.getElementById("cboStation").innerHTML;
+                var cboStation = document.getElementById("cboStation");
              
 
                 for(j = 0; j < jsonobj.stationen.length; j++){     
                   var t = document.createElement("option")
-                  t.value = jsonobj.stationen[j].station; 
+                  t.value = jsonobj.station_name[j];           //stationen[j].station; 
                   t.textContent =  t.value;
                   cboStation.append(t)
                }
