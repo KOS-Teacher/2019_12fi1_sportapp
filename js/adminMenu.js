@@ -33,7 +33,7 @@
                    }
               };
 
-              xmlhttp.open("GET", "getlogin.php?q=" + "stationen");
+              xmlhttp.open("GET", "getlogin_controller.php?q=" + "stationen");
 
               xmlhttp.send();
 
@@ -109,7 +109,7 @@
                  }
             };
 
-            xmlhttp.open("GET", "getlogin.php?q=" + " ");
+            xmlhttp.open("GET", "getlogin_controller.php?q=" + " ");
 
             xmlhttp.send();
 

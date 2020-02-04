@@ -52,7 +52,7 @@ function stationScannen() {
              //   location.href = "/view/schuelerAuswertung.php?schuelerid=";    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
            //}
 
-           xmlhttp.open("GET", "getlogin.php?q=" + txtSchuelerNr1 + txtSchuelerNr1 + txtSchuelerNr1 + txtSchuelerNr1 + txtSchuelerNr1 + lblstation);
+           xmlhttp.open("GET", "getlogin_controller.php?q=" + txtSchuelerNr1 + txtSchuelerNr1 + txtSchuelerNr1 + txtSchuelerNr1 + txtSchuelerNr1 + lblstation);
 
            xmlhttp.send();
       };

@@ -24,7 +24,7 @@ function Speichern() {
            }
       };
 
-      xmlhttp.open("GET", "getlogin.php?q=" + txtKlasseName + txtAnzahlSchueler);
+      xmlhttp.open("GET", "getlogin_controller.php?q=" + txtKlasseName + txtAnzahlSchueler);
 
       xmlhttp.send();
 
