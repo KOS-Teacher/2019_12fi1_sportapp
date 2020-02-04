@@ -6,65 +6,104 @@
 
 
 
-        // Test 
-        var jsonArray2 = ["steinam", "milena", "Katze"];
+      //   // Test1
+        
+      //   var stationtext = '{ "stationen" : [' +
+      //              '{ "station":"John"},' +
+      //              '{ "station":"Anna"},' +
+      //              '{ "station":"Peter"} ]}';
 
-        var cboStation = document.getElementById("cboStation");      //innerHTML;
 
+      //   var stationObj = JSON.parse(stationtext);
 
-        for(i in jsonArray2){
+      //   var cboStation = document.getElementById("cboStation");
+
+        
+
+      //   for(j = 0; j < stationObj.stationen.length; j++){    // i in stationObj)
            
-          // cboStation.options.length = 0;
+      //     // cboStation.options.length = 0;
 
-          // cboStation.options[cboStation.options.length] = new Option(jsonArray2[index], index);
+      //     // cboStation.options[cboStation.options.length] = new Option(jsonArray2[index], index);
 
-         // 
+      //    // 
+          
+      //     var t = document.createElement("option")
+      //     t.value = stationObj.stationen[j].station; //jsonArray2[i];
+      //     //j = j + 1;
+      //     t.textContent = t.value;
+      //     cboStation.append(t)
+          
+         
+      //  }
+  
 
-          var t = document.createElement("option")
-          t.value = jsonArray2[i];
-          t.textContent = t.value;
-          cboStation.append(t)
-       }
 
 
 
-      //  var xmlhttp = new XMLHttpRequest();
-      //   xmlhttp.onreadystatechange = function() {
 
-      //     if (this.readyState == 4 && this.status == 200) {
+
+
+      //   // Test2
+
+      //   var jsonArray2 = ["steinam", "milena", "Katze"];
+
+      //   var cboStation = document.getElementById("cboStation");      //innerHTML;
+
+
+      //   for(i in jsonArray2){
+           
+      //     // cboStation.options.length = 0;
+
+      //     // cboStation.options[cboStation.options.length] = new Option(jsonArray2[index], index);
+
+      //    // 
+
+      //     var t = document.createElement("option")
+      //     t.value = jsonArray2[i];
+      //     t.textContent = t.value;
+      //     cboStation.append(t)
+      //  }
+
+
+
+       var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+
+          if (this.readyState == 4 && this.status == 200) {
               
 
-      //          var result = this.responseText;
+               var result = this.responseText;
      
 
-      //          var jsonobj = JSON.parse('result'); 
+               var jsonobj = JSON.parse(this.responseText);
 
 
-      //          var jsonArray = [];
+               //var jsonArray = [];
 
-      //           for(var i in jsonobj)      jsonArray.push([i, jsonArray [i]]);
+                //for(var i in jsonobj)      jsonArray.push([i, jsonArray [i]]);
       
                  
 
-      //           // Test 
-      //           var jsonArray2 = ["steinam", "milena", "Katze"];
+                
+                //var jsonArray2 = ["steinam", "milena", "Katze"];
 
-      //           var cboStation = document.getElementById("cboStation").innerHTML;
+                var cboStation = document.getElementById("cboStation").innerHTML;
+             
 
-
-      //           for(var i = 0; i < jsonArray2[0].length; i++){
-      //             var t = document.createElement("option")
-      //             t.value = jsonArray2[0][i];
-      //             //t.textContent = words[myArray[0][i]-1];
-      //             cboStation.appendChild(t)
-      //          }
+                for(j = 0; j < jsonobj.stationen.length; j++){     
+                  var t = document.createElement("option")
+                  t.value = jsonobj.stationen[j].station; 
+                  t.textContent =  t.value;
+                  cboStation.append(t)
+               }
   
-      //     }
-      //    }
+          }
+         }
 
-      //    xmlhttp.open("GET", "getlogin.php?q=" + "allestationen");
+         xmlhttp.open("GET", "getlogin.php?q=" + "allestationen");
 
-      //    xmlhttp.send();
+         xmlhttp.send();
 
       
     
