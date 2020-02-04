@@ -61,7 +61,7 @@
            }
       };
 
-      xmlhttp.open("GET", "getlogin_controller.php?q=" + txtlogin, true);   // <------- PHP
+      xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + txtlogin, true);   // <------- PHP
 
       xmlhttp.send();
 

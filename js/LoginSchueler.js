@@ -33,7 +33,7 @@
                      }
                 };
 
-                xmlhttp.open("POST", "getlogin_controller.php?sch=" + schulerid, true);   // <------- PHP mit schulerid
+                xmlhttp.open("POST", "../controller/getlogin_controller.php?sch=" + schulerid, true);   // <------- PHP mit schulerid
 
                 xmlhttp.send();
 

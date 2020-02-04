@@ -3,10 +3,11 @@
 class Station {
 
     private $id_station;
-    private $name_station;
+    public $Station_Name;
     private $punkte_station;
     private $ort_station;
     private $beginn_station;
+    public $Station_Password;
     private $id_lehrer;
     private $aktiv_station;
 
@@ -117,9 +118,9 @@ class Station {
      *
      * @return self
      */
-    public function setNameStation($name_station)
+    public function setNameStation($Station_Name)
     {
-        $this->name_station = $name_station;
+        $this->name_station = $Station_Name;
 
         return $this;
     }
