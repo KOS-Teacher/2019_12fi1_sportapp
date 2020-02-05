@@ -57,11 +57,17 @@
                 
                 var result = this.responseText;
 
+                if(!result){ 
+
+                     // msgBox:  bitte probieren Sie es nochmal!
+
+                  }
+
                 location.href ="admin_menu.php";
            }
       };
 
-      xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + txtlogin, true);   // <------- PHP
+      xmlhttp.open("GET", "../controller/getlogin_controller.php?q=");   // <------- PHP : schulernummer + station_id
 
       xmlhttp.send();
 

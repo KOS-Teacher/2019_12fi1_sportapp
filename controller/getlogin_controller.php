@@ -35,14 +35,14 @@ $station = array(
     $daten[] = $row;
   };
 
-$myJSON1 = json_encode($station);
-echo $myJSON1;
+// $myJSON1 = json_encode($station);
+// echo $myJSON1;
 
 //   var_dump($myJSON1);
   
 
-  // $myJSON2 = json_encode($daten);
-  // echo $myJSON2;
+  $myJSON2 = json_encode($daten);
+  echo $myJSON2;
 
   // var_dump($myJSON2);
 
