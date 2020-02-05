@@ -17,8 +17,7 @@
 
                var jsonobj = JSON.parse(result);
 
-               //var stationenArray = new Array(2);
-              // var stationPassArray
+               
                
 
                 var cboStation = document.getElementById("cboStation");
@@ -30,12 +29,6 @@
                   t.value = jsonobj[j].Station_Name;           
                   t.textContent =  t.value;
                   cboStation.append(t)
-
-
-              //     for (i = 0; i < jsonobj[j].lene)
-
-              //         stationenArray[j][i].push(jsonobj[j].Station_ID);
-
 
                 }
   
@@ -86,14 +79,14 @@
                           for(j = 0; j < jsonobj.length; j++){          
                             
 
-                             if(jsonobj[j].Station_Name == station && jsonobj[j].Station_Name == txtPasswort){
+                             if(jsonobj[j].Station_Name == station && jsonobj[j].Station_Passwort == txtPasswort){
 
                               var punkte = jsonobj[j].Station_Punkte;  
 
                               var id =  jsonobj[j].Station_ID;
 
 
-                              location.href = "stationscannen.php?stationname=" + "station" + "&stationpunkte=" + "punkte" + "&stationid=" + "id";}
+                              location.href = "stationscannen.php?stationname=" + station + "&stationpunkte=" + punkte + "&stationid=" + id;}
 
                              }
 

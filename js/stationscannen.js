@@ -31,22 +31,19 @@
    stationname.innerHTML = getUrlParameterByName('stationname');
 
 
-    stationpunkte.innerHTML = getUrlParameterByName('stationpunkte');
+   stationpunkte.innerHTML = getUrlParameterByName('stationpunkte');
+
+
+   var stationid =  getUrlParameterByName('stationid');
  
 
 
  function absenden() {
 
 
-   //if (document.getElementById("txtSchuelerNr1").value == ""){         // && txtSchuelerNr2.innerText.length == 0 && txtSchuelerNr3.innerText.length == 0 && txtSchuelerNr4.innerText.length == 0 && txtSchuelerNr5.innerText.length == 0) {
+   
 
-     //window.alert("Nummer darf nicht leer sein!");
-
-      //return;
-
-   //} else {
-
-    location.href ="admin_menu.php";
+    //location.href ="admin_menu.php";
     
        var xmlhttp = new XMLHttpRequest();
 
@@ -67,7 +64,7 @@
            }
       };
 
-      xmlhttp.open("GET", "../controller/getlogin_controller.php?q=");   // <------- PHP : schulernummer + station_id
+      xmlhttp.open("GET", "../controller/getlogin_controller.php?schulernummer1=" + txtSchuelerNr1 + "&schulernummer2=" + + txtSchuelerNr2 + "&schulernummer3=" + txtSchuelerNr3 + "&schulernummer4=" + txtSchuelerNr4 + "&schulernummer5=" + txtSchuelerNr5 + "&station_id="  + stationid );   // <------- PHP : schulernummer + station_id
 
       xmlhttp.send();
 
