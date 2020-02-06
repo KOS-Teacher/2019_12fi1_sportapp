@@ -27,10 +27,11 @@
                 <div class="dropdown" style="height: auto;width: auto;margin-bottom: 117px;">
                 <button class="btn dropdown-toggle" id = "dropdown11" data-toggle="dropdown" aria-expanded="false" type="button" style="width: auto;margin-left: 59px;background-color: #f4b183;">Station auswählen</button>
 
-                     <div class="dropdown-menu" id = "dropdown12" role="menu">
-                       <!-- <a class="dropdown-item" role="presentation" href="#">Jonglieren</a>-->
+                       <!-- <div class="dropdown-menu" id = "dropdown12" role="menu">
+                       <a class="dropdown-item" role="presentation" href="#">Jonglieren</a>-->
                        <!--<a class="dropdown-item" role="presentation" href="#">Nähen</a>-->
-                    </div>
+                       
+                    </div> -->
                 
                 
                 </div>

@@ -98,7 +98,7 @@
               }
             
 
-              xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + txtPasswort + station);
+              xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + txtPasswort + "&p=" + station);
 
               xmlhttp.send();
 

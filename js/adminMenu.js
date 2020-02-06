@@ -1,9 +1,9 @@
 
           function admStation() {
 
-            console.log("hiiiiiiiiiiiiiii")
+           
 
-            location.href = "stationen.php";
+            
 
                var xmlhttp = new XMLHttpRequest();
 
@@ -11,20 +11,19 @@
 
                    if (this.readyState == 4 && this.status == 200) {
 
-                        
+                
 
-                        //var result = this.responseText;     // JSON mit Stationen
+                    var cboStation = document.getElementById("cboStation");
+             
 
-
-                        var myArr = JSON.parse(this.responseText);
-                        
-
-                        var out = "";
-                        var i;
-                        for(i = 0; i < myArr.length; i++) {
-                            out += '=station' + i + myArr[i].url;
-                        }
-
+                    for(j = 0; j < jsonobj.length; j++){        
+    
+                      var t = document.createElement("option")
+                      t.value = jsonobj[j].Station_Name;           
+                      t.textContent =  t.value;
+                      cboStation.append(t)
+    
+                    }
 
 
 
@@ -33,7 +32,7 @@
                    }
               };
 
-              xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + "stationen");
+              xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + "allestationen");
 
               xmlhttp.send();
 
