@@ -34,7 +34,7 @@
                                 <select id="cboStation" class="dropdown-item" >
                                     <option value="none" selected disabled hidden>Station auswählen</option> 
                                 </select>
-                                <input class="form-control d-flex justify-content-center" type="password" id="txtPasswort" placeholder="Passwort"><button class="btn btn-green" id="btnLoginLehrer" type="button" style="margin-top: 20%;width: 125px;">Login</button>
+                                <input class="form-control d-flex justify-content-center" type="password" id="txtPasswort" placeholder="Passwort"><button class="btn btn-green" id="btnLoginLehrer" onclick="loginLehrer()" type="button" style="margin-top: 20%;width: 125px;">Login</button>
                         </form>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                 <div class="collapse show item-2" role="tabpanel" data-parent="#accordion-1">
                     <div class="card-body">
                         <div class="d-flex justify-content-center" style="height: 40%;padding-top: 5%;padding-bottom: 5%;">
-                            <form style="text-align: center;max-height: 100%;"><input class="form-control d-flex justify-content-center" type="password" id="txtAdminPasswort" placeholder="Passwort"><button class="btn btn-green" id="btnLoginAdmin" type="button" style="margin-top: 20%;width: 125px;">Login</button></form>
+                            <form style="text-align: center;max-height: 100%;"><input class="form-control d-flex justify-content-center" type="password" id="txtAdminPasswort" placeholder="Passwort"><button class="btn btn-green" id="btnLoginAdmin" onclick="loginAdmin()"  type="button" style="margin-top: 20%;width: 125px;">Login</button></form>
                         </div>
                     </div>
                 </div>
