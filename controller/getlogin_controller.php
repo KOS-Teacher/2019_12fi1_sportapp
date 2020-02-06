@@ -21,30 +21,26 @@ $station = array(
   )
 );
 
-  // echo $_GET["q"];
+  $request = $_GET["q"];
   
-  // $myJSON = json_encode($station);
 
-  // echo $myJSON;
-
-  // print_r($station);
-
-  $alleStationen = $db->query("SELECT Station_Name, Station_Passwort FROM station");
+  if($request == "allestationen") {
+  $alleStationen = $db->query("SELECT Station_Name FROM station");
 
   while($row= $alleStationen->fetch_assoc()) {
     $daten[] = $row;
   };
 
-// $myJSON1 = json_encode($station);
-// echo $myJSON1;
 
-//   var_dump($myJSON1);
   
-
   $myJSON2 = json_encode($daten);
   echo $myJSON2;
+};
 
-  // var_dump($myJSON2);
+  
+
+  
+
 
 
 
