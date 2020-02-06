@@ -56,7 +56,7 @@
                     }
                 };
 
-                xmlhttp.open("POST", "../controller/getlogin_controller.php?sch=" + schulerid);   // <------- zurück :  Klasse Name, Punkte , Aktueller Rang der Klasse, Aktuelle Bestpunktzahl
+                xmlhttp.open("POST", "../controller/schueler_controller.php?sch=" + schulerid);   // <------- zurück :  Klasse Name, Punkte , Aktueller Rang der Klasse, Aktuelle Bestpunktzahl
 
                 xmlhttp.send();
 

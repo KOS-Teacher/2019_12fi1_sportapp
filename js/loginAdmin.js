@@ -35,7 +35,7 @@
           }
          }
 
-         xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + "allestationen");
+         xmlhttp.open("GET", "../controller/station_controller.php?q=" + "allestationen");
 
          xmlhttp.send();
 
@@ -98,7 +98,7 @@
               }
             
 
-              xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + txtPasswort + "&p=" + station);
+              xmlhttp.open("GET", "../controller/station_controller.php?q=" + txtPasswort + "&p=" + station);
 
               xmlhttp.send();
 
@@ -139,7 +139,7 @@
              }
            
 
-             xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + txtPasswort);
+             xmlhttp.open("GET", "../controller/administrator_controller.php?q=" + txtPasswort);
 
              xmlhttp.send();
 
