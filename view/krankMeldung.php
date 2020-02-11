@@ -37,12 +37,16 @@
                                     <div class="input-group" style="padding-left: 15px;padding-right: 15px;">
 
 
-                                        <div class="input-group-prepend"><span class="input-group-text" id="txtSchuelerIDKrank">Schülernummer:</span></div><input class="form-control" type="text">
+                                        <div class="input-group-prepend">
+                                        
+                                        
+                                        <span class="input-group-text">Schülernummer:</span></div><input class="form-control"  id="txtSchuelerIDKrank"type="text">
+                                        
                                         
                                         
                                         <div class="input-group-append">
-                                        <button class="btn btn-green" id="btnGesund" onclick="bestaetigen()" type="button">Gesund</button>
-                                        <button class="btn btn-red" id="btnKrank" onclick="bestaetigen()" type="button">Krank</button>
+                                        <button class="btn btn-green" id="btnGesund" onclick="gesund()" type="button">Gesund</button> 
+                                        <button class="btn btn-red" id="btnKrank" onclick="krank()" type="button">Krank</button>
                                         </div>
 
 

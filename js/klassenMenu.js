@@ -16,28 +16,8 @@ function newClass() {
 
 function Bearbeiten() {
 
-    console.log("hiiiiiiiiiiiiiii")
-
+      location.href = "schuelerAnzahlBearbeiten.php";    
      
-
-       var xmlhttp = new XMLHttpRequest();
-
-       xmlhttp.onreadystatechange = function() {
-
-           if (this.readyState == 4 && this.status == 200) {
-
-                
-
-                var result = this.responseText;
-
-                location.href = "/view/schuelerAnzahlBearbeiten.php?schuelerid=" + responseText;    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
-           }
-      };
-
-      xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + "klassen");
-
-      xmlhttp.send();
-
 }
 
 
@@ -45,26 +25,7 @@ function Bearbeiten() {
 
 function del() {
 
-    console.log("hiiiiiiiiiiiiiii")
 
-     
-
-       var xmlhttp = new XMLHttpRequest();
-
-       xmlhttp.onreadystatechange = function() {
-
-           if (this.readyState == 4 && this.status == 200) {
-
-                
-
-                var result = this.responseText;
-
-                location.href = "/view/schuelerAnzahlBearbeiten.php?schuelerid=" + responseText;    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
-           }
-      };
-
-      xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + "klassen");
-
-      xmlhttp.send();
+       location.href = "schuelerAnzahlBearbeiten.php?schuelerid=" + responseText;    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
 
 }

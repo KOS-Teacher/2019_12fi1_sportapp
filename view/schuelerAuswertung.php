@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- AJAX mit PHP Integration -->
-    <script type="text/javascript" src="../js/schuelerAuswertung.js"></script>
+    
 </head>
 
 <body>
@@ -27,6 +26,9 @@
             <div style="padding-top: 5%;padding-bottom: 5%;width: 360px;">
                 <div class="d-flex justify-content-center" style="margin-bottom: 93px;">
                     <div class="table-responsive" style="background-color: #fefefe;">
+
+
+
                         <table class="table">
                             <thead class="table-header">
                                 <tr>
@@ -35,16 +37,42 @@
                                     <th>ØPunkte pro Schüler</th>
                                 </tr>
                             </thead>
+
                             <tbody>
                                 <tr class="table-row">
                                     <td>1.</td>
-                                    <td>12FI1</td>
-                                    <td>22</td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                             </tbody>
+
+                            <tbody>
+                                <tr class="table-row">
+                                    <td>2.</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+
+                            <tbody>
+                                <tr class="table-row">
+                                    <td>3.</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+
+
                         </table>
                     </div>
                 </div>
+
+
+
+
+
+
+
                 <div>
                     <div class="table-responsive">
                         <table class="table">
@@ -55,13 +83,32 @@
                                     <th>Klasse</th>
                                 </tr>
                             </thead>
+
                             <tbody>
                                 <tr class="table-row">
                                     <td>1.</td>
-                                    <td>12345</td>
-                                    <td>12FI1</td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                             </tbody>
+                            
+                            <tbody>
+                                <tr class="table-row">
+                                    <td>2.</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+
+
+                            <tbody>
+                                <tr class="table-row">
+                                    <td>3.</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+
                         </table>
                     </div>
                 </div>
@@ -71,6 +118,9 @@
     <footer></footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- AJAX mit PHP Integration -->
+    <script type="text/javascript" src="../js/schuelerAuswertung.js"></script>
 </body>
 
 </html>

@@ -25,7 +25,7 @@
       
         function admKlassen() {
 
-          //console.log("hiiiiiiiiiiiiiii")
+          
   
           location.href = "admin_klasse_verwalten.php";
            
@@ -37,7 +37,7 @@
 
       function genNummer() {
 
-          
+          // TODO
 
       }
 
@@ -45,39 +45,15 @@
   
       function krank() {
 
-          console.log("hiiiiiiiiiiiiiii")
-  
           location.href = "krankMeldung.php";
            
-
       }
 
 
       
       function auswertung() {
 
-          console.log("hiiiiiiiiiiiiiii")
-
-           
-
-             var xmlhttp = new XMLHttpRequest();
-
-             xmlhttp.onreadystatechange = function() {
-
-                 if (this.readyState == 4 && this.status == 200) {
-
-                      
-
-                      var result = this.responseText;
-
-                      location.href = "/view/schuelerAuswertung.php?schuelerid=" + responseText;    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
-                 }
-            };
-
-            xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + " ");
-
-            xmlhttp.send();
-
+        location.href = "schuelerAuswertung.php"; 
       }
 
 
