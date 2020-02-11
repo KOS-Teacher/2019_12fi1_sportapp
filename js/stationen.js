@@ -11,12 +11,14 @@
 
             
 
-                var cboStation = document.getElementById("cboStation");
+                
 
                 var result = this.responseText;
 
 
                 var jsonobj = JSON.parse(result);
+
+                var cboStation = document.getElementById("cboStation");
          
 
                 for(j = 0; j < jsonobj.length; j++){        
@@ -61,19 +63,19 @@
 
 
 
-            stationen = ["Saab", "Volvo", "BMW"];
+            // stationen = ["Saab", "Volvo", "BMW"];
 
 
 
 
-            var dropdown = document.getElementById("dropdown12");
+            // var dropdown = document.getElementById("dropdown12");
 
-            for (i = 0; i < stationen.length; i++) {
-                 var option = document.createElement('option');
-                 option.text = stationen[i];
-                 option.value = stationen[i];
-                 dropdown.appendChild(option);
-              } 
+            // for (i = 0; i < stationen.length; i++) {
+            //      var option = document.createElement('option');
+            //      option.text = stationen[i];
+            //      option.value = stationen[i];
+            //      dropdown.appendChild(option);
+            //   } 
 
 
 

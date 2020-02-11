@@ -62,7 +62,7 @@
            else {
 
 
-              location.href = "stationscannen.php?stationname=" + "result" + "&stationpunkte=" + "result";
+              //location.href = "stationscannen.php?stationname=" + "result" + "&stationpunkte=" + "result";
 
                var xmlhttp = new XMLHttpRequest();
 
