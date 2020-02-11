@@ -22,7 +22,8 @@ CREATE TABLE IF not EXISTS Station (
 	Station_Ort varchar(225),
     Station_Zeitpunkt_von DateTime,
     Station_Zeitpunkt_bis datetime,
-    Station_Passwort varchar(225)
+    Station_Passwort varchar(225),
+    Station_Bemerkung varchar(225)
 );
 
 -- einträge um zu testen 
