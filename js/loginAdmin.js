@@ -131,7 +131,14 @@
 
                        var result = this.responseText;
                        
-                       if (result) {location.href = "Admin_menu.php";}
+                       if (result) {
+                         
+                        location.href = "Admin_menu.php";
+                      
+                      }
+                      else{
+                        window.alert("Kennwort ist falsch!");
+                      }
 
                      
                   }
@@ -139,7 +146,7 @@
              }
            
 
-             xmlhttp.open("GET", "../controller/administrator_controller.php?q=" + txtPasswort);
+             xmlhttp.open("GET", "../controller/administrator_controller.php?pass=" + txtPasswort);
 
              xmlhttp.send();
 

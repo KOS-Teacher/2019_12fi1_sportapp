@@ -1,5 +1,50 @@
 
-            console.log("hiiiiiiiiiiiiiii")
+            //console.log("hiiiiiiiiiiiiiii")
+
+
+           // get Stationen 
+           var xmlhttp = new XMLHttpRequest();
+
+           xmlhttp.onreadystatechange = function() {
+
+               if (this.readyState == 4 && this.status == 200) {
+
+            
+
+                var cboStation = document.getElementById("cboStation");
+
+                var result = this.responseText;
+
+
+                var jsonobj = JSON.parse(result);
+         
+
+                for(j = 0; j < jsonobj.length; j++){        
+
+                  var t = document.createElement("option")
+                  t.value = jsonobj[j].Station_Name;           
+                  t.textContent =  t.value;
+                  cboStation.append(t)
+
+                }
+
+                    
+               }
+
+
+               xmlhttp.open("GET", "../controller/station_controller.php?q=" + "allestationen");
+
+               xmlhttp.send();
+          };
+
+        
+
+        
+
+
+
+
+
 
 
             function getUrlVars() {
