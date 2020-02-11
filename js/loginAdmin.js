@@ -98,7 +98,7 @@
               }
             
 
-              xmlhttp.open("GET", "../controller/station_controller.php?q=" + txtPasswort + "&p=" + station);
+              xmlhttp.open("GET", "../controller/station_controller.php?p=" + txtPasswort + "s&=" + station);
 
               xmlhttp.send();
 
@@ -146,7 +146,7 @@
              }
            
 
-             xmlhttp.open("GET", "../controller/administrator_controller.php?pass=" + txtPasswort);
+             xmlhttp.open("GET", "../controller/administrator_controller.php?p=" + txtPasswort);
 
              xmlhttp.send();
 
