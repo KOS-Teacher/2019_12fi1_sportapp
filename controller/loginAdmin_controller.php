@@ -18,8 +18,8 @@ echo "test";
 function getStation() {
 
   $station = new Station();
-  $station->getStation();
-  print_r($station);
+  $station->fetch_posts();
+  // var_dump($station);
 };
 
    
