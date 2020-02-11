@@ -19,51 +19,59 @@
                           
                         var jsonobj = JSON.parse(result);
 
-                        var SchuelerNummer = document.getElementById("SchuelerNummer");
-                        var SchuelerKlasse = document.getElementById("SchuelerKlasse");
-                        var SchuelerPunkte = document.getElementById("SchuelerPunkte");
-                        var KlasseRang = document.getElementById("KlasseRang");
-                        var BestePunkte = document.getElementById("BestePunkte");
-             
+                        var table1 = document.getElementById("table1");
+
+                        var table2 = document.getElementById("table2");
+                        
+                        var i = 1;
+
+                        var h = 1;
+
+                        
 
                        for(j = 0; j < jsonobj.length; j++){        
 
-                            var t = document.createElement("option")
-                            t.value = jsonobj[j].Station_Name;           
-                            t.textContent =  t.value;
-                            cboStation.append(t)
+                         
+
+                         if (jsonobj[j].Station_Name == "table1"){         // table1 = Auswetung Klassen
+                            
+                              table1.rows[j].cells[i].innerHTML =  jsonobj[j].Station_Name; 
+
+                              i++;
+
+                              table1.rows[j].cells[i].innerHTML =  jsonobj[j].Punkte; 
+
+                         }
+
+
+
+
+                         if (jsonobj[j].Station_Name == "table2"){        // table2 = Auswertung Schüler
+
+
+                              table2.rows[j].cells[h].innerHTML =  jsonobj[j].Schuler_Nummer; 
+
+                              i++;
+
+                              table2.rows[j].cells[h].innerHTML =  jsonobj[j].Station_Name; 
+
+                         }
+                           
+                                   
+                           
                         }
 
 
-                      
-
-            
-            
-
-          
-                      SchuelerNummer.innerHTML =  result;
-                      SchuelerKlasse.innerHTML =  result;
-                      SchuelerPunkte.innerHTML =  result;
-                      KlasseRang.innerHTML =  result;
-                      BestePunkte.innerHTML =  result;
-
-
-
-                      location.href = "admin_menu.php";    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
+                      location.href = "admin_menu.php";    
                  }
-            };
+            }
+          }
 
             xmlhttp.open("GET", "../controller/getlogin_controller.php?a=" + "auswertungen");
 
             xmlhttp.send();
 
-
-
-
-
-
-
             
-        }
+        
                    
            

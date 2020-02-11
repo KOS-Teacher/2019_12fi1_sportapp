@@ -29,8 +29,8 @@
 
 
 
-                        <table class="table">
-                            <thead class="table-header">
+                        <table class="table" id ="table1">
+                            <thead class="table-header" >
                                 <tr>
                                     <th>Platz</th>
                                     <th>Klasse</th>
@@ -75,7 +75,7 @@
 
                 <div>
                     <div class="table-responsive">
-                        <table class="table">
+                        <table class="table"  id ="table2">
                             <thead class="table-header">
                                 <tr>
                                     <th>Platz</th>
