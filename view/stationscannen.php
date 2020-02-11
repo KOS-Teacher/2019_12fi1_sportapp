@@ -13,7 +13,11 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-md">
         <div class="container">
-            <div class="collapse navbar-collapse" id="navcol-1"></div>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navcol-1">
+                <div style="width: 360px">
+                    <button class="btn btn-red" id="btnLogout" onclick="logout()" type="button" style="width: 125px; float: right;">Logout</button>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
