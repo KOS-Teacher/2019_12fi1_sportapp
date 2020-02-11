@@ -1,11 +1,5 @@
 
 
-      
-
-        
-
-
-
        var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
 
@@ -90,8 +84,14 @@
 
                              }
 
+                             
+
           
                          }
+                         else
+                             {
+                              window.alert("Kennwort ist falsch!");
+                             }
                       
                    }
                   }

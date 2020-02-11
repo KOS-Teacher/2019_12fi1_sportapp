@@ -2,9 +2,9 @@
 
 function newClass() {
 
-    console.log("hiiiiiiiiiiiiiii")
+    //console.log("hiiiiiiiiiiiiiii")
 
-    location.href = "/view/adminNeuKlasse.php";
+    location.href = "adminNeuKlasse.php";
 
  
 

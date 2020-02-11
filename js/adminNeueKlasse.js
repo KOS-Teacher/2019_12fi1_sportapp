@@ -3,7 +3,7 @@
 
 function Speichern() {
 
-    console.log("hiiiiiiiiiiiiiii")
+    //console.log("hiiiiiiiiiiiiiii")
 
     var txtKlasseName = document.getElementById("txtKlasseName").value;
     var txtAnzahlSchueler = document.getElementById("txtAnzahlSchueler").value;
@@ -20,11 +20,11 @@ function Speichern() {
 
                 //var result = this.responseText;
 
-                location.href = "/view/admin_klasse_verwalten.php";    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
+                location.href = "/view/admin_klasse_verwalten.php";    
            }
       };
 
-      xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + txtKlasseName + txtAnzahlSchueler);
+      xmlhttp.open("GET", "../controller/getlogin_controller.php?k=" + txtKlasseName + "?s=" + txtAnzahlSchueler);
 
       xmlhttp.send();
 
@@ -34,7 +34,7 @@ function Speichern() {
 
 function Verwerfen() {
 
-    console.log("hiiiiiiiiiiiiiii")
+    //console.log("hiiiiiiiiiiiiiii")
 
     location.href = "/view/admin_klasse_verwalten.php"; 
 

@@ -32,12 +32,13 @@
 
                     
                }
+            }
 
 
                xmlhttp.open("GET", "../controller/station_controller.php?q=" + "allestationen");
 
                xmlhttp.send();
-          };
+          
 
         
 
@@ -55,7 +56,7 @@
                     vars[key] = value;
                 });
                 return vars;
-            }
+            };
 
            // var stationen = getUrlVars()["station"];
 
@@ -84,10 +85,10 @@
 
         function admNeueStation() {
 
-            console.log("hiiiiiiiiiiiiiii")
+           // console.log("hiiiiiiiiiiiiiii")
   
-            location.href = "/view/admin_station_erstellen.php"
+            location.href = "/view/admin_station_erstellen.php";
   
                
   
-        }
+        };

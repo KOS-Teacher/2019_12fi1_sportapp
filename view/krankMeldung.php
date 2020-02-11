@@ -35,8 +35,18 @@
                             <form>
                                 <div>
                                     <div class="input-group" style="padding-left: 15px;padding-right: 15px;">
+
+
                                         <div class="input-group-prepend"><span class="input-group-text" id="txtSchuelerIDKrank">Schülernummer:</span></div><input class="form-control" type="text">
-                                        <div class="input-group-append"><button class="btn btn-green" id="btnBestaetigen" onclick="bestaetigen()" type="button">Bestätigen</button></div>
+                                        
+                                        
+                                        <div class="input-group-append">
+                                        <button class="btn btn-green" id="btnGesund" onclick="bestaetigen()" type="button">Gesund</button>
+                                        <button class="btn btn-red" id="btnKrank" onclick="bestaetigen()" type="button">Krank</button>
+                                        </div>
+
+
+
                                     </div>
                                 </div>
                             </form>
