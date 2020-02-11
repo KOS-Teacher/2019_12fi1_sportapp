@@ -57,6 +57,7 @@
                 if(!result){ 
 
                      // msgBox:  bitte probieren Sie es nochmal!
+                     alert("bitte probieren Sie es nochmal!");
 
                   }
 
@@ -64,11 +65,25 @@
            }
       };
 
-      xmlhttp.open("GET", "../controller/getlogin_controller.php?schulernummer1=" + txtSchuelerNr1 + "&schulernummer2=" + + txtSchuelerNr2 + "&schulernummer3=" + txtSchuelerNr3 + "&schulernummer4=" + txtSchuelerNr4 + "&schulernummer5=" + txtSchuelerNr5 + "&station_id="  + stationid );   // <------- PHP : schulernummer + station_id
+      xmlhttp.open("GET", "../controller/getlogin_controller.php?schulernummer1=" + txtSchuelerNr1 + "&schulernummer2="  + txtSchuelerNr2 + "&schulernummer3=" + txtSchuelerNr3 + "&schulernummer4=" + txtSchuelerNr4 + "&schulernummer5=" + txtSchuelerNr5 + "&station_id="  + stationid );   // <------- PHP : schulernummer + station_id
 
       xmlhttp.send();
 
 //}
+}
+
+
+function checkListe(){
+
+
+  
+  
+       // TODO : PDF generieren
+
+       
+
+
+
 }
 
 

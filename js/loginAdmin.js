@@ -1,11 +1,5 @@
 
 
-      
-
-        
-
-
-
        var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
 
@@ -35,7 +29,7 @@
           }
          }
 
-         xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + "allestationen");
+         xmlhttp.open("GET", "../controller/station_controller.php?q=" + "allestationen");
 
          xmlhttp.send();
 
@@ -62,7 +56,7 @@
            else {
 
 
-              location.href = "stationscannen.php?stationname=" + "result" + "&stationpunkte=" + "result";
+              //location.href = "stationscannen.php?stationname=" + "result" + "&stationpunkte=" + "result";
 
                var xmlhttp = new XMLHttpRequest();
 
@@ -90,15 +84,21 @@
 
                              }
 
+                             
+
           
                          }
+                         else
+                             {
+                              window.alert("Kennwort ist falsch!");
+                             }
                       
                    }
                   }
               }
             
 
-              xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + txtPasswort + station);
+              xmlhttp.open("GET", "../controller/station_controller.php?p=" + txtPasswort + "s&=" + station);
 
               xmlhttp.send();
 
@@ -131,7 +131,14 @@
 
                        var result = this.responseText;
                        
-                       if (result) {location.href = "Admin_menu.php";}
+                       if (result) {
+                         
+                        location.href = "Admin_menu.php";
+                      
+                      }
+                      else{
+                        window.alert("Kennwort ist falsch!");
+                      }
 
                      
                   }
@@ -139,7 +146,7 @@
              }
            
 
-             xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + txtPasswort);
+             xmlhttp.open("GET", "../controller/administrator_controller.php?p=" + txtPasswort);
 
              xmlhttp.send();
 

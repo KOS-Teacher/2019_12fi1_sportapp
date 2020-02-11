@@ -24,19 +24,42 @@
         </div>
         <div class="d-flex justify-content-center">
             <form style="width: 300px;padding-top: 5%;padding-bottom: 5%;">
-                <div class="dropdown" style="height: auto;width: auto;margin-bottom: 117px;">
-                <button class="btn dropdown-toggle" id = "dropdown11" data-toggle="dropdown" aria-expanded="false" type="button" style="width: auto;margin-left: 59px;background-color: #f4b183;">Station auswählen</button>
 
-                     <div class="dropdown-menu" id = "dropdown12" role="menu">
-                       <!-- <a class="dropdown-item" role="presentation" href="#">Jonglieren</a>-->
+
+
+
+           
+
+            
+                             <form style="text-align: center;max-height: 100%;">
+                                <select id="cboStation" class="dropdown-item" >
+                                    <option value="none" selected disabled hidden>Station auswählen</option> 
+                                </select>
+                               
+                           </form>
+          
+
+
+
+
+
+
+
+
+                <!-- <div class="dropdown" style="height: auto;width: auto;margin-bottom: 117px;"> -->
+                <!-- <button class="btn dropdown-toggle" id = "dropdown11" data-toggle="dropdown" aria-expanded="false" type="button" style="width: auto;margin-left: 59px;background-color: #f4b183;">Station auswählen</button> -->
+
+                       <!-- <div class="dropdown-menu" id = "dropdown12" role="menu">
+                       <a class="dropdown-item" role="presentation" href="#">Jonglieren</a>-->
                        <!--<a class="dropdown-item" role="presentation" href="#">Nähen</a>-->
-                    </div>
-                
+                       
+                <!-- </div>
+                 -->
                 
                 </div>
 
 
-                <div><button class="btn btn-primary btn-menu" id="btnVerwerfen" onclick="admNeueStation()" type="button" style="width: 180px;">Neue Station anlegen</button><button class="btn btn-primary btn-menu" id="btnSpeichern" type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
+                <div><button class="btn btn-primary btn-menu" id="btnNeu" onclick="admNeueStation()" type="button" style="width: 180px;">Neue Station anlegen</button><button class="btn btn-primary btn-menu" id="btnBearbeiten type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
             </form>
         </div>
     </main>

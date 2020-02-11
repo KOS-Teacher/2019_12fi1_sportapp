@@ -52,7 +52,7 @@
                     <div class="input-group-prepend"><span class="input-group-text">Schüler-Nummer<br></span></div><input class="form-control" type="text" id="txtSchuelerNr5">
                     <div class="input-group-append"></div>
                 </div>
-                <div style="margin-top: 25px;"><button class="btn btn-green" id="btnCheckliste" type="button" style="width: 125px;margin-right: 65px;">Checkliste</button><button class="btn btn-green" id="btnAbsenden" onclick="absenden()" type="button" style="width: 125px;">Absenden</button></div>
+                <div style="margin-top: 25px;"><button class="btn btn-green" id="btnCheckliste" onclick="checkListe()" type="button" style="width: 125px;margin-right: 65px;">Checkliste</button><button class="btn btn-green" id="btnAbsenden" onclick="absenden()" type="button" style="width: 125px;">Absenden</button></div>
             </form>
         </div>
     </main>
