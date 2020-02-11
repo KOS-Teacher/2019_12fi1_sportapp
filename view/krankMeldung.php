@@ -60,10 +60,10 @@
                                     </div>
                                     
                                 </div>
-                                <div style="padding: 50px 20px 50px 20px">
+                                <!-- <div style="padding: 50px 20px 50px 20px">
                                         <button style="float: left;" class="btn btn-green" id="btnGesund" onclick="bestaetigen()" type="button">Gesund</button>
                                         <button style="float: right;" class="btn btn-red" id="btnKrank" onclick="bestaetigen()" type="button">Krank</button>
-                                    </div>
+                                    </div> -->
                             </form>
                         </div>
                     </div>
