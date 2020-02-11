@@ -25,7 +25,7 @@
       
         function admKlassen() {
 
-          console.log("hiiiiiiiiiiiiiii")
+          //console.log("hiiiiiiiiiiiiiii")
   
           location.href = "admin_klasse_verwalten.php";
            
