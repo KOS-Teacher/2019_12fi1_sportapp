@@ -59,7 +59,7 @@
                 </div>
 
 
-                <div><button class="btn btn-primary btn-menu" id="btnVerwerfen" onclick="admNeueStation()" type="button" style="width: 180px;">Neue Station anlegen</button><button class="btn btn-primary btn-menu" id="btnSpeichern" type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
+                <div><button class="btn btn-primary btn-menu" id="btnNeu" onclick="admNeueStation()" type="button" style="width: 180px;">Neue Station anlegen</button><button class="btn btn-primary btn-menu" id="btnBearbeiten type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
             </form>
         </div>
     </main>
