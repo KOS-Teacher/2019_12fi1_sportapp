@@ -16,11 +16,19 @@ function Speichern() {
 
            if (this.readyState == 4 && this.status == 200) {
 
+
+            //   if (this.responseText){
+                 
+               
+            //   }
+            //   else{
+            //     window.alert("Bitte versuchen Sie es noch mal!");
+            //   }
                 
 
-                //var result = this.responseText;
+              location.href = "admin_klasse_verwalten.php";
 
-                location.href = "/view/admin_klasse_verwalten.php";    
+                    
            }
       };
 
@@ -36,7 +44,7 @@ function Verwerfen() {
 
     //console.log("hiiiiiiiiiiiiiii")
 
-    location.href = "/view/admin_klasse_verwalten.php"; 
+    location.href = "admin_klasse_verwalten.php"; 
 
 }
 

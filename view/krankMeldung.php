@@ -16,7 +16,11 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean">
         <div class="container">
-            <div class="collapse navbar-collapse" id="navcol-1"></div>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navcol-1">
+                <div style="width: 360px">
+                    <button class="btn" id="btnLogout" onclick="back()" type="button" style="width: 125px; float: right; border-color: black">Menü</button>
+                </div>
+            </div>
         </div>
     </nav>
     <main class="text-center">
@@ -37,18 +41,29 @@
                                     <div class="input-group" style="padding-left: 15px;padding-right: 15px;">
 
 
-                                        <div class="input-group-prepend"><span class="input-group-text" id="txtSchuelerIDKrank">Schülernummer:</span></div><input class="form-control" type="text">
+                                        <div class="input-group-prepend">
+
+                                        
+                                        
+                                       
+                                        <span class="input-group-text">Schülernummer:</span></div><input class="form-control"  id="txtSchuelerIDKrank"type="text">
+                                        
                                         
                                         
                                         <div class="input-group-append">
-                                        <button class="btn btn-green" id="btnGesund" onclick="bestaetigen()" type="button">Gesund</button>
-                                        <button class="btn btn-red" id="btnKrank" onclick="bestaetigen()" type="button">Krank</button>
+                                        <button class="btn btn-green" id="btnGesund" onclick="gesund()" type="button">Gesund</button> 
+                                        <button class="btn btn-red" id="btnKrank" onclick="krank()" type="button">Krank</button>
                                         </div>
 
 
 
                                     </div>
+                                    
                                 </div>
+                                <!-- <div style="padding: 50px 20px 50px 20px">
+                                        <button style="float: left;" class="btn btn-green" id="btnGesund" onclick="bestaetigen()" type="button">Gesund</button>
+                                        <button style="float: right;" class="btn btn-red" id="btnKrank" onclick="bestaetigen()" type="button">Krank</button>
+                                    </div> -->
                             </form>
                         </div>
                     </div>
