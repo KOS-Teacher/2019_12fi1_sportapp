@@ -13,7 +13,10 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-md">
         <div class="container">
-            <div class="collapse navbar-collapse" id="navcol-1"></div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+            <button class="btn btn-green" id="btnAbsenden" onclick="absenden()" type="button" style="width: 125px;">Logout</button>
+            </div>
+            
         </div>
     </nav>
     <main>
