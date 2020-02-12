@@ -67,7 +67,7 @@
                 
                 
                 
-                <button class="btn btn-primary btn-menu" id="btnBearbeiten type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
+                <button class="btn btn-primary btn-menu" id="btnBearbeiten" onclick="admBearbeiten()" type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
             </form>
         </div>
     </main>

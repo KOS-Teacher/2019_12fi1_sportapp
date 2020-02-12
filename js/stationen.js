@@ -85,10 +85,17 @@
 
         function admNeueStation() {
 
-           // console.log("hiiiiiiiiiiiiiii")
+           
   
-            location.href = "/view/admin_station_erstellen.php";
+            location.href = "admin_station_erstellen.php";
   
                
   
+        };
+
+
+        function admBearbeiten(){
+
+            location.href = "edit_station.php";
+
         };
