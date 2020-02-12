@@ -33,15 +33,15 @@
 
 
            
-
+            
             
                              <form style="text-align: center;max-height: 100%;">
-                                <select id="cboStation" class="dropdown-item" >
+                                <select id="cboStation" class="dropdown-item" style="width: auto;margin-left: 59px;background-color: #f4b183;">
                                     <option value="none" selected disabled hidden>Station auswählen</option> 
                                 </select>
                                
                            </form>
-          
+                           
 
 
 
@@ -63,7 +63,11 @@
                 </div>
 
 
-                <div><button class="btn btn-primary btn-menu" id="btnNeu" onclick="admNeueStation()" type="button" style="width: 180px;">Neue Station anlegen</button><button class="btn btn-primary btn-menu" id="btnBearbeiten type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
+                <div><button class="btn btn-primary btn-menu" id="btnNeu" onclick="admNeueStation()" type="button" style="width: 180px;padding-right: 8px;margin-right: 225px;margin-left: 550px;background-color: #f4b183;">Neue Station anlegen</button>
+                
+                
+                
+                <button class="btn btn-primary btn-menu" id="btnBearbeiten type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
             </form>
         </div>
     </main>
