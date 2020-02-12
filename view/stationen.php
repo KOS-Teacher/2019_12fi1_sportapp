@@ -15,7 +15,11 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean">
         <div class="container">
-            <div class="collapse navbar-collapse" id="navcol-1"></div>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navcol-1">
+                <div style="width: 360px">
+                    <button class="btn" id="btnLogout" onclick="back()" type="button" style="width: 125px; float: right; border-color: black">Menü</button>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
@@ -29,15 +33,15 @@
 
 
            
-
+            
             
                              <form style="text-align: center;max-height: 100%;">
-                                <select id="cboStation" class="dropdown-item" >
+                                <select id="cboStation" class="dropdown-item" style="width: auto;margin-left: 59px;background-color: #f4b183;">
                                     <option value="none" selected disabled hidden>Station auswählen</option> 
                                 </select>
                                
                            </form>
-          
+                           
 
 
 
@@ -63,7 +67,11 @@
                 
                 
                 
+<<<<<<< HEAD
+                <button class="btn btn-primary btn-menu" id="btnBearbeiten type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
+=======
                 <button class="btn btn-primary btn-menu" id="btnBearbeiten" onclick="admBearbeiten()" type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
+>>>>>>> 3d4f8d5d8b99b9d21b805647b3115e15f968503a
             </form>
         </div>
     </main>
