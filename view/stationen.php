@@ -15,11 +15,7 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean">
         <div class="container">
-            <div class="collapse navbar-collapse d-flex justify-content-center" id="navcol-1">
-                <div style="width: 360px">
-                    <button class="btn" id="btnLogout" onclick="back()" type="button" style="width: 125px; float: right; border-color: black">Menü</button>
-                </div>
-            </div>
+            <div class="collapse navbar-collapse" id="navcol-1"></div>
         </div>
     </nav>
     <main>
@@ -33,15 +29,15 @@
 
 
            
-            
+
             
                              <form style="text-align: center;max-height: 100%;">
-                                <select id="cboStation" class="dropdown-item" style="width: auto;margin-left: 59px;background-color: #f4b183;">
+                                <select id="cboStation" class="dropdown-item" >
                                     <option value="none" selected disabled hidden>Station auswählen</option> 
                                 </select>
                                
                            </form>
-                           
+          
 
 
 
