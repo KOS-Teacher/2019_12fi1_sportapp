@@ -5,6 +5,8 @@
            // get Stationen 
            var xmlhttp = new XMLHttpRequest();
 
+          
+
            xmlhttp.onreadystatechange = function() {
 
                if (this.readyState == 4 && this.status == 200) {
@@ -50,13 +52,13 @@
 
 
 
-            function getUrlVars() {
-                var vars = {};
-                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-                    vars[key] = value;
-                });
-                return vars;
-            };
+            // function getUrlVars() {
+            //     var vars = {};
+            //     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            //         vars[key] = value;
+            //     });
+            //     return vars;
+            // };
 
            // var stationen = getUrlVars()["station"];
 
@@ -85,9 +87,9 @@
 
         function admNeueStation() {
 
-           
+            var station_id = 0;
   
-            location.href = "admin_station_erstellen.php";
+            location.href = "edit_station.php?q=" + station_id;
   
                
   
@@ -96,6 +98,9 @@
 
         function admBearbeiten(){
 
-            location.href = "edit_station.php";
+
+            
+
+            location.href = "edit_station.php?q=" + station_id;       // id von station weitergeben
 
         };

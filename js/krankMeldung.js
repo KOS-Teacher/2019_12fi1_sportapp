@@ -1,13 +1,13 @@
 
 
-function gesund() {
+function bestaetigen(zusatand) {   
 
-    
+   
 
     var txtSchuelerIDKrank = document.getElementById("txtSchuelerIDKrank").value;
 
-    if(txtSchuelerIDKrank.length  <= 0){
-       window.alert("Die Nummer darf nicht leer sein!");
+    if(txtSchuelerIDKrank.lenght == 0){
+       wondows.alert("Die Nummer darf nicht leer sein!");
     }
     else{
 
@@ -21,55 +21,15 @@ function gesund() {
 
                 
 
-                
+                //var result = this.responseText;
 
-                location.href = "admin_menu.php";   
+                location.href = "admin_menu.php";    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
            }
       };
 
-      xmlhttp.open("GET", "../controller/getlogin_controller.php?s=" + txtSchuelerIDKrank + "?g=" + "gesund" );
+      xmlhttp.open("GET", "../controller/getlogin_controller.php?s=" + txtSchuelerIDKrank + "&z=" + zustand); // gesund = false krank = true
 
       xmlhttp.send();
      }
-
-}
-
-
-
-
-
-function krank(){
-
-
-     var txtSchuelerIDKrank = document.getElementById("txtSchuelerIDKrank").value;
-
-     if(txtSchuelerIDKrank.length <= 0){
-        window.alert("Die Nummer darf nicht leer sein!");
-     }
-     else{
- 
-     
- 
-        var xmlhttp = new XMLHttpRequest();
- 
-        xmlhttp.onreadystatechange = function() {
- 
-            if (this.readyState == 4 && this.status == 200) {
- 
-                 
- 
-                 
- 
-                 location.href = "admin_menu.php";   
-            }
-       };
- 
-       xmlhttp.open("GET", "../controller/getlogin_controller.php?s=" + txtSchuelerIDKrank + "?g=" + "krank" );
- 
-       xmlhttp.send();
-      }
-
-
-
 
 }

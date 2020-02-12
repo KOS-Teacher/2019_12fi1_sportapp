@@ -15,11 +15,7 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-md">
         <div class="container">
-            <div class="collapse navbar-collapse d-flex justify-content-center" id="navcol-1">
-                <div style="width: 360px">
-                    <button class="btn" id="btnLogout" onclick="back()" type="button" style="width: 125px; float: right; border-color: black">Menü</button>
-                </div>
-            </div>
+            <div class="collapse navbar-collapse" id="navcol-1"></div>
         </div>
     </nav>
     <main class="text-center">
@@ -28,7 +24,7 @@
         </div>
         <div class="d-flex justify-content-center" style="padding-top: 5%;padding-bottom: 5%;">
             <form class="text-center justify-content-center align-items-center align-content-center align-self-center" style="width: 300px;"><button class="btn btn-primary btn-menu" id="btnClassNew" onclick="newClass()" type="button" style="width: 200px;margin: 0px;margin-right: 0px;padding-right: 12px;height: 38px;margin-bottom: 20px;"><strong>Neuanlegen</strong></button><button class="btn btn-primary btn-menu"
-                    id="btnClassEdit" onclick="Bearbeiten()" type="button" style="width: 200px;margin-bottom: 20px;"><strong>Bearbeiten</strong></button><button class="btn btn-primary btn-menu" id="btnClassDel" onclick="del()" type="button" style="width: 200px;margin-bottom: 20px;"><strong>Löschen</strong></button></form>
+                    id="btnClassEdit" onclick="Bearbeiten()" type="button" style="width: 200px;margin-bottom: 20px;"><strong>Bearbeiten</strong></button><button class="btn btn-primary btn-menu" id="btnClassDel" onclick="del()" type="button" style="width: 200px;margin-bottom: 20px;"><strong>LĂ¶schen</strong></button></form>
         </div>
     </main>
     <footer></footer>

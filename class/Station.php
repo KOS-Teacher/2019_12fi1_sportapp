@@ -25,7 +25,7 @@ class Station {
             if (xxx($q) > 0) {
                 $row = xxx($q);
                 $this->setIdStation($row['id_station']);
-                $this->setNameStation($row['Station_Name']);
+                $this->setNameStation($row['name_station']);
                 $this->setPunkteStation($row['punkte_station']);
                 $this->setOrtStation($row['ort_station']);
                 $this->setBeginnStation($row['beginn_station']);
@@ -38,7 +38,7 @@ class Station {
     public function addStation() {
         $sql = "INSERT INTO station (
             id_station,
-            Station_Name,
+            name_station,
             punkte_station,
             ort_station,
             beginn_station,
@@ -46,7 +46,7 @@ class Station {
             id_lehrer
         ) VALUES (
             'null',
-            '".$this->getStationName()."',
+            '".$this->getNameStation()."',
             '".$this->getPunkteStation()."',
             '".$this->getOrtStation()."',
             '".$this->getBeginnStation()."',
@@ -67,7 +67,7 @@ class Station {
 
     public function updateStation() {
         $sql = "UPDATE station SET ";
-        $sql .= "Station_Name = '".$this->getStationName()."', ";
+        $sql .= "name_station = '".$this->getNameStation()."', ";
         $sql .= "punkte_station = '".$this->getPunkteStation()."', ";
         $sql .= "ort_station = '".$this->getOrtStation()."', ";
         $sql .= "beginn_station = '".$this->getBeginnStation()."', ";
@@ -102,25 +102,25 @@ class Station {
     }
 
     /**
-     * Get the value of Station_Name
+     * Get the value of name_station
      *
      * @return mixed
      */
-    public function getStationName()
+    public function getNameStation()
     {
-        return $this->Station_Name;
+        return $this->name_station;
     }
 
     /**
-     * Set the value of Station_Name
+     * Set the value of name_station
      *
-     * @param mixed Station_Name
+     * @param mixed name_station
      *
      * @return self
      */
     public function setNameStation($Station_Name)
     {
-        $this->Station_Name = $Station_Name;
+        $this->name_station = $Station_Name;
 
         return $this;
     }
