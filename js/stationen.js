@@ -89,7 +89,7 @@
 
             var station_id = 0;
   
-            location.href = "edit_station.php?q=" + station_id;
+            location.href = "edit_station.php?q=" + station_id; // id von station weitergeben
   
                
   
@@ -98,9 +98,55 @@
 
         function admBearbeiten(){
 
+            var station_id = 0;
 
-            
 
-            location.href = "edit_station.php?q=" + station_id;       // id von station weitergeben
+
+
+
+
+            var xmlhttp = new XMLHttpRequest();
+
+            xmlhttp.onreadystatechange = function() {
+ 
+                if (this.readyState == 4 && this.status == 200) {
+ 
+                 var result = this.responseText;
+
+                 var jsonobj = JSON.parse(result);
+ 
+                 var cboStation = document.getElementById("cboStation");
+
+                 var selected_station = cboStation.options[e.selectedIndex].text;
+          
+ 
+                 for(j = 0; j < jsonobj.length; j++){        
+ 
+                   if(jsonobj[j].Station_Name == selected_station){
+   
+                    station_id = jsonobj[j].Station_Name;  
+
+                    location.href = "edit_station.php?q=" + station_id;       // id von station weitergeben
+
+                   }
+                   else{
+                       alert("Leider kann die Station nicht finden!")
+                   }
+    
+ 
+                 }
+ 
+                     
+                }
+             }
+ 
+ 
+                xmlhttp.open("GET", "../controller/station_controller.php?q=" + "allestationen");
+ 
+                xmlhttp.send();
+
+
+
+           
 
         };
