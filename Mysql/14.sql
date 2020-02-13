@@ -62,9 +62,10 @@ CREATE TABLE `station` (
   `Station_Punkte` INTEGER(11) DEFAULT NULL,
   `Station_Ort` VARCHAR(225) COLLATE utf8_general_ci DEFAULT NULL,
   `Station_Zeitpunkt_von` DATETIME DEFAULT NULL,
-  `Station_zeitpunkt_bis` DATETIME DEFAULT NULL,
+  `Station_Zeitpunkt_bis` DATETIME DEFAULT NULL,
   `Station_Passwort` VARCHAR(225) COLLATE utf8_general_ci DEFAULT NULL,
-  PRIMARY KEY USING BTREE (`Station_ID`)
+  PRIMARY KEY USING BTREE (`Station_ID`),
+  Station_Bemerkung varchar(225) COLLATE utf8_general_ci DEFAULT NULL
 ) ENGINE=InnoDB
 AUTO_INCREMENT=3 CHARACTER SET 'utf8' COLLATE 'utf8_general_ci'
 ;

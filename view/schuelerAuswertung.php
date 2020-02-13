@@ -16,7 +16,11 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean">
         <div class="container">
-            <div class="collapse navbar-collapse" id="navcol-1"></div>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navcol-1">
+                <div style="width: 360px">
+                    <button class="btn" id="btnMenu" onclick="back()" type="button" style="width: 125px; float: right; border-color: black">Menü</button>
+                </div>
+            </div>
         </div>
     </nav>
     <main class="text-center">
