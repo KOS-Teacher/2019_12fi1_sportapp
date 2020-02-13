@@ -14,6 +14,10 @@
         
 
          var cboStation = document.getElementById("cboStation");
+
+         var inaktiv = document.getElementById("txtInaktiv");
+
+         var krank = document.getElementById("txtKrank");
       
 
          for(j = 0; j < jsonobj.length; j++){        
@@ -25,9 +29,16 @@
 
          }
 
+     
+         inaktiv.value = jsonobj.inaktiv;
+
+         krank.value =  jsonobj.krank;
+
+
+
    }
   }
 
-  xmlhttp.open("GET", "../controller/station_controller.php?k=" + "alleklassen");  //   zurück : 
+  xmlhttp.open("GET", "../controller/station_controller.php?k=" + "alleklassen");  //   zurück : alle klassen, inaktivAnzahl, krankanzahl, schuleNummer, Punkte
 
   xmlhttp.send();
