@@ -3,21 +3,26 @@
   require("db_controller.php");
   header('Content-type: application/json');
 
-  $request = $_GET["q"];
+//   $request = $_GET["q"];
   
 
-  if($request == "allestationen") {
-  $alleStationen = $db->query("SELECT Station_Name FROM station");
+//   if($request == "allestationen") {
+//   $alleStationen = $db->query("SELECT Station_Name FROM station");
 
-  while($row= $alleStationen->fetch_assoc()) {
-    $daten[] = $row;
-  };
+//   while($row= $alleStationen->fetch_assoc()) {
+//     $daten[] = $row;
+//   };
 
 
   
-  $myJSON2 = json_encode($daten);
-  echo $myJSON2;
-};
+//   $myJSON2 = json_encode($daten);
+//   echo $myJSON2;
+// };
+
+
+$id = 1;
+$station = new Station;
+$station->getStationName($id);
 
   
 
