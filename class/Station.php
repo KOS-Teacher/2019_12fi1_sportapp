@@ -18,12 +18,95 @@ class Station {
     }
 };
 
+<<<<<<< HEAD
+=======
+    public function getStation() {
+        $id_station = $this->getIdStation();
+        if (!empty($id_station)) {
+            $sql = "SELECT * FROM station WHERE id_station ='{$id_station}'";
+            $q = $pdo->query($sql);
+            if (xxx($q) > 0) {
+                $row = xxx($q);
+                $this->setIdStation($row['id_station']);
+                $this->setNameStation($row['name_station']);
+                $this->setPunkteStation($row['punkte_station']);
+                $this->setOrtStation($row['ort_station']);
+                $this->setBeginnStation($row['beginn_station']);
+                $this->setAktivStation($row['aktiv_station']);
+                $this->setIdLehrer($row['id_lehrer']);
+            }
+            }
+        }
+
+    public function addStation() {
+        $sql = "INSERT INTO station (
+            id_station,
+            name_station,
+            punkte_station,
+            ort_station,
+            beginn_station,
+            aktiv_station,
+            id_lehrer
+        ) VALUES (
+            'null',
+            '".$this->getNameStation()."',
+            '".$this->getPunkteStation()."',
+            '".$this->getOrtStation()."',
+            '".$this->getBeginnStation()."',
+            '".$this->getAktivStation()."',
+            '".$this->getIdLehrer()."'
+        )";
+        xxx($sql);
+        $id_station = xxx();
+        return $id_station;
+    }
+>>>>>>> d6c38b645f74eb94f8b315052b21875b19699940
+
+
+<<<<<<< HEAD
+=======
+    public function updateStation() {
+        $sql = "UPDATE station SET ";
+        $sql .= "name_station = '".$this->getNameStation()."', ";
+        $sql .= "punkte_station = '".$this->getPunkteStation()."', ";
+        $sql .= "ort_station = '".$this->getOrtStation()."', ";
+        $sql .= "beginn_station = '".$this->getBeginnStation()."', ";
+        $sql .= "aktiv_station = '".$this->getAktivStation()."', ";
+        $sql .= "id_lehrer = '".$this->getIdLehrer()."', ";
+        $sql .= " WHERE id_station = '".$this->getIdStation()."' ";
+        xxx($sql);
+    }
+>>>>>>> d6c38b645f74eb94f8b315052b21875b19699940
 
 
 
+<<<<<<< HEAD
 
+=======
+    /**
+     * Get the value of name_station
+     *
+     * @return mixed
+     */
+    public function getNameStation()
+    {
+        return $this->name_station;
+    }
 
+    /**
+     * Set the value of name_station
+     *
+     * @param mixed name_station
+     *
+     * @return self
+     */
+    public function setNameStation($Station_Name)
+    {
+        $this->name_station = $Station_Name;
 
+        return $this;
+    }
+>>>>>>> d6c38b645f74eb94f8b315052b21875b19699940
 
 
 

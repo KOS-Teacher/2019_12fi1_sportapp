@@ -32,7 +32,7 @@
             <form style="text-align: center;max-height: 100%;width: 250px;"><input class="form-control" type="number" id="txtLogin" placeholder="Nummer"><button class="btn btn-green" id="btnLogin" onclick="loginSchueler()" type="button" style="margin-top: 20%;width: 125px;">Login</button></form>
         </div>
         <div class="d-flex justify-content-center">
-            <div style="margin-top: 15px;margin-bottom: 5px;width: 360px;padding-left: 10px;padding-right: 10px;"><button class="btn btn-menu" id="btnKlasseUebersicht" style="font-weight: bold;float: left;">Klassenübersicht</button><button class="btn btn-menu" id="btnStationenUebersicht" style="font-weight: bold;float: right;">Stationen</button></div>
+            <div style="margin-top: 15px;margin-bottom: 5px;width: 360px;padding-left: 10px;padding-right: 10px;"><button class="btn btn-menu" id="btnKlasseUebersicht" onclick="klassenUbersicht()" style="font-weight: bold;float: left;">Klassenübersicht</button><button class="btn btn-menu" id="btnStationenUebersicht" style="font-weight: bold;float: right;">Stationen</button></div>
         </div>
     </main>
     <footer></footer>

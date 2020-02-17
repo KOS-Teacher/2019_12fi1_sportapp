@@ -51,8 +51,13 @@
                                         
                                         
                                         <div class="input-group-append">
+<<<<<<< HEAD
                                         <button class="btn btn-green" id="btnGesund" onclick="gesund()" type="button">Gesund</button> 
                                         <button class="btn btn-red" id="btnKrank" onclick="krank()" type="button">Krank</button>
+=======
+                                        <button class="btn btn-green" id="btnGesund" onclick="bestaetigen('false')" type="button">Gesund</button>
+                                        <button class="btn btn-red" id="btnKrank" onclick="bestaetigen('true')" type="button">Krank</button>
+>>>>>>> 3d4f8d5d8b99b9d21b805647b3115e15f968503a
                                         </div>
 
 

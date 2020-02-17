@@ -65,6 +65,15 @@
 
 
 
+
+        function klassenUbersicht(){
+
+           
+         location.href ="klasseUebersicht.php";
+
+
+        }
+
        
 
   

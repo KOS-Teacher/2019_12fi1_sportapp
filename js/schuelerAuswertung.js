@@ -46,7 +46,7 @@
 
 
 
-                         if (jsonobj[j].Station_Name == "table2"){        // table2 = Auswertung Schüler
+                         if (jsonobj[j].Station_Name == "table2"){        // table2 = Auswertung Sch�ler
 
 
                               table2.rows[j].cells[h].innerHTML =  jsonobj[j].Schuler_Nummer; 
@@ -69,6 +69,8 @@
 
             xmlhttp.open("GET", "../controller/getlogin_controller.php?a=" + "auswertungen");
 
+
+            //
             xmlhttp.send();
 
             
