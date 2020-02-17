@@ -4,17 +4,14 @@
 
 class Station {
 
-    function getStationName() {
+    function getStation() {
         global $db;
-        $stmt= $db->query("SELECT Station_Name FROM station");
-
+        $stmt= $db->query("SELECT * FROM station");
         while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             $daten[] = $row;
         };
-
         $myJSON = json_encode($daten);
-
         return $myJSON;
       }
-      
+     
 };
