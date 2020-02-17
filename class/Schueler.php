@@ -13,7 +13,7 @@ class Schueler {
       }
       function SetSchueler($col1, $col2, $col3, $col4) {
         global $db;
-        $stmt= $db->query(INSERT INTO schueler ("`NULL`, `Klasse_ID`, `Schueler_Punkte`, `Schueler_Krank`)VALUES (NULL, {$col2}, {$col3}, {$col4}");
+        $stmt= $db->query("INSERT INTO schueler (`NULL`, `Klasse_ID`, `Schueler_Punkte`, `Schueler_Krank`)VALUES (NULL, {$col2}, {$col3}, {$col4}");
         
       }
       function UpdateSchueler($id, $col2, $col3, $col4) {
