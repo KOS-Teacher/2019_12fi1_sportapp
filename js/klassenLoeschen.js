@@ -8,17 +8,17 @@ function del() {
 
        xmlhttp.onreadystatechange = function() {
 
-           if (this.readyState == 4 && this.status == 200) {
+        //    if (this.readyState == 4 && this.status == 200) {
 
                 
 
-                var result = this.responseText;
+        //         var result = this.responseText;
 
-                location.href = "/view/admin_klasse_verwalten.php";    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
-           }
+        //         location.href = "/view/admin_klasse_verwalten.php";    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
+        //    }
       };
 
-      xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" + "delete" + txtKlasseName);
+      xmlhttp.open("GET", "../controller/klasse_controller.php?delete=" + txtKlasseName);
 
       xmlhttp.send();
 

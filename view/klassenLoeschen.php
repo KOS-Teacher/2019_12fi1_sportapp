@@ -31,8 +31,9 @@
             <p class="text-center" style="padding-right: 15px;padding-left: 15px;">Geben Sie den Namen der zu löschenden Klasse ein:</p>
         </div>
         <div class="d-flex justify-content-center" style="height: 40%;padding-top: 5%;padding-bottom: 5%;">
-            <form style="text-align: center;max-height: 100%;width: 300px;"><input class="form-control" type="text" id="txtKlasseName" placeholder="Klasse"><button class="btn btn-green" id="btnAbbruch" onclick="cancel()" type="button" style="margin-top: 20%;width: 125px;">Abbruch</button><button class="btn btn-red" id="btnLoeschen" onclick="del()"
-                    type="button" style="margin-top: 20%;width: 125px;">Löschen</button></form>
+            <form style="text-align: center;max-height: 100%;width: 300px;"><input class="form-control" type="text" id="txtKlasseName" placeholder="Klasse">
+            <button class="btn btn-green" id="btnAbbruch" onclick="cancel()" type="button" style="margin-top: 20%;width: 125px;">Abbruch</button>
+            <button class="btn btn-red" id="btnLoeschen" onclick="del()" type="button" style="margin-top: 20%;width: 125px;">Löschen</button></form>
         </div>
     </main>
     <footer></footer>
