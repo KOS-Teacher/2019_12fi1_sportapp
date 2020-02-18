@@ -23,7 +23,7 @@ class Schueler {
       }
       function DeleteSchueler($id) {
         global $db;
-        $stmt= $db->query("DELETE FROM schueler WHERE 'Schueler_ID'= {$id}");
+        $db->query("DELETE FROM schueler WHERE 'Schueler_ID'= {$id}");
         
       }
 
