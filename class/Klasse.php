@@ -23,8 +23,7 @@ class Klasse {
       }
       function DeleteKlasse($id) {
         global $db;
-        $stmt= $db->query("DELETE FROM Klasse WHERE 'Klasse_ID'= {$id}");
-        var_dump($stmt);
+        $db->query("DELETE FROM Klasse WHERE Klasse_ID= '{$id}'"); 
       }
 
 
