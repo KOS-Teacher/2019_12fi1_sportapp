@@ -18,12 +18,12 @@ class Klasse {
       }
       function UpdateKlasse($id, $col2) {
         global $db;
-        $stmt= $db->query("UPDATE Klasse (`Klasse_ID`, `Klasse_Anzahlschueler`)VALUES ({$col2}, WHERE 'Klasse_ID' = {$id})");
+        $stmt= $db->query("UPDATE Klasse (`Klasse_ID`, `Klasse_Anzahlschueler`)VALUES '({$col2}', WHERE Klasse_ID = '{$id}')");
         
       }
       function DeleteKlasse($id) {
         global $db;
-        $db->query("DELETE FROM Klasse WHERE Klasse_ID= '{$id}'"); 
+        $db->query("DELETE FROM Klasse WHERE Klasse_ID= '{$id}'"); //funktioniert
       }
 
 
