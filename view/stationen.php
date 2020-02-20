@@ -67,7 +67,11 @@
                 
                 
                 
+<<<<<<< HEAD
                 <button class="btn btn-primary btn-menu" id="btnBearbeiten" onclick="admBearbeiten()" type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 100px;background-color: #f4b183;">Bearbeiten</button></div>
+=======
+                <button class="btn btn-primary btn-menu" id="btnBearbeiten" onclick="admBearbeiten()" type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
+>>>>>>> 7f8c16d8267a6dd3e6f53e19b3d7587ddb4b51b9
             </form>
         </div>
     </main>

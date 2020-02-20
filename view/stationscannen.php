@@ -13,10 +13,13 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-md">
         <div class="container">
+<<<<<<< HEAD
             <div class="collapse navbar-collapse" id="navcol-1">
             <button class="btn btn-green" id="btnAbsenden" onclick="absenden()" type="button" style="width: 125px;">Logout</button>
             </div>
             
+=======
+>>>>>>> 7f8c16d8267a6dd3e6f53e19b3d7587ddb4b51b9
             <div class="collapse navbar-collapse d-flex justify-content-center" id="navcol-1">
                 <div style="width: 360px">
                     <button class="btn btn-red" id="btnLogout" onclick="logout()" type="button" style="width: 125px; float: right;">Logout</button>
