@@ -27,7 +27,7 @@
                
                
 
-                var cboStation = document.getElementById("cboKlasse");
+                var cboStation = document.getElementById("cboStation");
              
 
                 for(j = 0; j < jsonobj.length; j++){        
@@ -51,15 +51,7 @@
 
 
 
-var cboKlasse = document.getElementById("cboKlasse");
 
-klassen.forEach(myFunction);
-
-           function myFunction(item) {
-                var option = document.createElement("option");
-                option.text = "Kiwi";
-                x.add(option); 
-            } 
 
 
 
@@ -68,7 +60,7 @@ klassen.forEach(myFunction);
 
             function bestaetigen() {
 
-                console.log("hiiiiiiiiiiiiiii")
+               
     
                 var txtSchuelerAnzahl = document.getElementById("txtSchuelerAnzahl").value;
                 var e = document.getElementById("cboKlasse");
@@ -84,11 +76,11 @@ klassen.forEach(myFunction);
     
                             var result = this.responseText;
     
-                            location.href = "/view/admin_klasse_verwalten.php";    //?schuelerid=" + result + "?klasse=" + result + "?punkte=" + result;
+                            location.href = "admin_klasse_verwalten.php";    
                        }
                   };
     
-                  xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" +  strUser +  txtSchuelerAnzahl);
+                  xmlhttp.open("GET", "../controller/getlogin_controller.php?q=" +  strUser + "&q=" + txtSchuelerAnzahl);
     
                   xmlhttp.send();
     

@@ -26,10 +26,18 @@
             </div>
             <div class="d-flex justify-content-center" style="height: 40%;padding-top: 5%;padding-bottom: 5%;">
                 <form style="text-align: center;max-height: 100%;">
-                    <div class="dropdown d-flex justify-content-center" style="margin-bottom: 20px;"><button class="btn dropdown-toggle border rounded pale-orange" data-toggle="dropdown" aria-expanded="false" id="cboKlasse" type="button" style="margin-bottom: 0px;width: 250px;">Klasse</button>
+                    <!-- <div class="dropdown d-flex justify-content-center" style="margin-bottom: 20px;"><button class="btn dropdown-toggle border rounded pale-orange" data-toggle="dropdown" aria-expanded="false" id="cboKlasse" type="button" style="margin-bottom: 0px;width: 250px;">Klasse</button>
                         <div class="dropdown-menu" role="menu"
                             style="margin-top: 0px;width: 250px;"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
-                    </div><input class="form-control" type="number" id="txtSchuelerAnzahl" placeholder="Schüleranzahl"><button class="btn btn-green" id="btnBestaetigen" onclick="bestaetigen()" type="button" style="margin-top: 20%;width: 125px;">Bestätigen</button></form>
+                    </div> -->
+                    
+
+                    <select id="cboStation" class="dropdown-item" >
+                                    <option value="none" selected disabled hidden>Station auswählen</option> 
+                                </select>
+                    
+                    
+                    <input class="form-control" type="number" id="txtSchuelerAnzahl" placeholder="Schüleranzahl"><button class="btn btn-green" id="btnBestaetigen" onclick="bestaetigen()" type="button" style="margin-top: 20%;width: 125px;">Bestätigen</button></form>
             </div>
         </div>
     </main>

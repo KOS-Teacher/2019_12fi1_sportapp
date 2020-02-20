@@ -23,7 +23,20 @@ class Klasse {
       }
       function DeleteKlasse($id) {
         global $db;
-        $db->query("DELETE FROM Klasse WHERE Klasse_ID= '{$id}'"); //funktioniert
+        $stmt = $db->prepare("DELETE FROM Klasse WHERE Klasse_ID =:id");
+        $stmt->bindParam(':id', $id);
+        $stmt->execute();
+        if( !$stmt->rowCount() ) { 
+          echo "Deletion failed";
+        } else {
+          echo "Deletion complete";
+        }
+        // try {
+        //   $db->exec("DELETE FROM Klasse WHERE Klasse_ID = '{$id}'"); //funktioniert
+        
+        // } catch (PDOException $e) {
+        //   echo $e->getMessage();
+        // }
       }
 
 
