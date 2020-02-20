@@ -30,9 +30,9 @@
          }
 
      
-         inaktiv.innerHTML = jsonobj.inaktiv;
+         inaktiv.value = jsonobj.inaktiv;
 
-         krank.innerHTML =  jsonobj.krank;
+         krank.value =  jsonobj.krank;
 
 
 

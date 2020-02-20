@@ -124,7 +124,7 @@
  
                    if(jsonobj[j].Station_Name == selected_station){
    
-                    station_id = jsonobj[j].Station_ID;  
+                    station_id = jsonobj[j].Station_Name;  
 
                     location.href = "edit_station.php?q=" + station_id;       // id von station weitergeben
 

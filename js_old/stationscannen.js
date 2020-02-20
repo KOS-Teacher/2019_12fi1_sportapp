@@ -15,12 +15,23 @@
    var stationname = document.getElementById("stationname");
 
    var stationpunkte = document.getElementById("stationpunkte");
+  
+   
+   var txtSchuelerNr1 = document.getElementById("txtSchuelerNr1");
+  
+   var txtSchuelerNr2 = document.getElementById("txtSchuelerNr2");
+  
+   var txtSchuelerNr3 = document.getElementById("txtSchuelerNr3");
+  
+   var txtSchuelerNr4 = document.getElementById("txtSchuelerNr4");
+  
+   var txtSchuelerNr5 = document.getElementById("txtSchuelerNr5");   
 
 
-   stationname.value = getUrlParameterByName('stationname');
+   stationname.innerHTML = getUrlParameterByName('stationname');
 
 
-   stationpunkte.value = getUrlParameterByName('stationpunkte');
+   stationpunkte.innerHTML = getUrlParameterByName('stationpunkte');
 
 
    var stationid =  getUrlParameterByName('stationid');
@@ -29,18 +40,6 @@
 
  function absenden() {
 
-   
-  
-   
-   var txtSchuelerNr1 = document.getElementById("txtSchuelerNr1").value;
-  
-   var txtSchuelerNr2 = document.getElementById("txtSchuelerNr2").value;
-  
-   var txtSchuelerNr3 = document.getElementById("txtSchuelerNr3").value;
-  
-   var txtSchuelerNr4 = document.getElementById("txtSchuelerNr4").value;
-  
-   var txtSchuelerNr5 = document.getElementById("txtSchuelerNr5").value;   
 
    
 
@@ -66,7 +65,7 @@
            }
       };
 
-      xmlhttp.open("GET", "../controller/getlogin_controller.php?schulernummer1=" + txtSchuelerNr1 + "&schulernummer2="  + txtSchuelerNr2 + "&schulernummer3=" + txtSchuelerNr3 + "&schulernummer4=" + txtSchuelerNr4 + "&schulernummer5=" + txtSchuelerNr5 + "&station_id="  + stationid );   // <------- PHP : schulernummer + station_id , zurück ob es geklappt hat aslo boolean
+      xmlhttp.open("GET", "../controller/getlogin_controller.php?schulernummer1=" + txtSchuelerNr1 + "&schulernummer2="  + txtSchuelerNr2 + "&schulernummer3=" + txtSchuelerNr3 + "&schulernummer4=" + txtSchuelerNr4 + "&schulernummer5=" + txtSchuelerNr5 + "&station_id="  + stationid );   // <------- PHP : schulernummer + station_id
 
       xmlhttp.send();
 

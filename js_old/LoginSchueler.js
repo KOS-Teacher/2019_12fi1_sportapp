@@ -14,6 +14,9 @@
 
              } else {
 
+                 
+              location.href ="schuelerUebersicht.php/?SchuelerNummer=1" + 1 + "&SchuelerKlasse=2" + 2 + "&SchuelerPunkte=3" + 3 + "&KlasseRang=4" + 4 + "&BestePunkte=5" + 5;
+
               
 
 
@@ -27,7 +30,7 @@
                           var result = this.responseText;
 
 
-                          if (Object.keys(result).length > 0){
+                          if (result){
 
                           var jsonobj = Json.parse(result);
 
