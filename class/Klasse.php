@@ -11,9 +11,9 @@ class Klasse {
         $myJSON = json_encode($daten);
         return $myJSON;
       }
-      function SetKlasse($col1) {
+      function SetKlasse($col2, $col) {
         global $db;
-        $stmt= $db->query("INSERT INTO Klasse (`NULL`, `Klasse_Anzahlschueler`)VALUES (NULL, {$col1})");
+        $stmt= $db->query("INSERT INTO Klasse (`Klasse_ID`, `Klasse_Anzahlschueler`)VALUES ('{$col2}', '{$col}')");
         
       }
       function UpdateKlasse($id, $col2) {
