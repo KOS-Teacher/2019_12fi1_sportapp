@@ -20,11 +20,11 @@ function Speichern() {
 
                 //var result = this.responseText;
 
-                location.href = "admin_klasse_verwalten.php";    
+                location.href = "/view/admin_klasse_verwalten.php";    
            }
       };
 
-      xmlhttp.open("GET", "../controller/getlogin_controller.php?k=" + txtKlasseName + "?s=" + txtAnzahlSchueler + "?n=" + "neueKlasseErstellen");
+      xmlhttp.open("GET", "../controller/getlogin_controller.php?k=" + txtKlasseName + "?s=" + txtAnzahlSchueler);
 
       xmlhttp.send();
 
@@ -36,7 +36,7 @@ function Verwerfen() {
 
     //console.log("hiiiiiiiiiiiiiii")
 
-    location.href = "admin_klasse_verwalten.php"; 
+    location.href = "/view/admin_klasse_verwalten.php"; 
 
 }
 

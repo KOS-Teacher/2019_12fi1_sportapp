@@ -1,0 +1,176 @@
+html {
+  height: 100%;
+  font-family: calibri;
+}
+
+body {
+  height: 100%;
+  font-family: calibri;
+}
+
+nav {
+  height: 10%;
+  max-height: 10%;
+  background-color: #ec880e;
+}
+
+main {
+  min-height: 80%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer {
+  height: 10%;
+  background-color: #ec880e;
+  max-height: 10%;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+div.siegertreppe {
+  background-color: orange;
+  position: relative;
+}
+
+.treppe-text {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+
+label.label {
+  color: orange;
+  font-weight: bold;
+  float: left;
+}
+
+p.label {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+p.text {
+  font-size: 1.4em;
+  color: #ec880e;
+}
+
+div.title {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+div.title h3 {
+  text-align: center;
+}
+
+div.space {
+  clear: both;
+  width: 100%;
+}
+
+label.text {
+  float: right;
+  font-weight: bold;
+}
+
+.btn-green {
+  border-color: green;
+  background-color: rgb(98,177,98);
+  color: white;
+}
+
+.btn-green:hover, .btn-green:active, .btn-green:focus {
+  background-color: green;
+  color: white;
+}
+
+.btn-red {
+  border-color: red;
+  background-color: rgb(255,93,93);
+  color: white;
+}
+
+.btn-red:hover, .btn-red:active, .btn-red:focus {
+  background-color: red;
+  color: white;
+}
+
+#btnLoeschen {
+  float: right;
+}
+
+#btnAbbruch {
+  float: left;
+}
+
+input {
+  text-align: center;
+  width: 250px;
+}
+
+.pale-orange {
+  background-color: #f4b183;
+  color: white;
+}
+
+.pale-orange:hover, .pale-orange:active, .pale-orange:focus {
+  background-color: #f4b183;
+  color: white;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.7em;
+  color: #ec880e;
+}
+
+.btn-menu {
+  border-color: #ee7d2f;
+  color: #000000;
+  background-color: #F4B183;
+}
+
+.left {
+  text-align: left!important;
+}
+
+.right {
+  text-align: right!important;
+}
+
+.btn-primary:hover {
+  color: #000000;
+  background-color: #FF8000;
+  border-color: #FF8000;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 .2rem rgba(255,116,38,0.5);
+}
+
+.Classheader {
+  text-align: center;
+  margin: auto;
+}
+
+#btnVerwerfen {
+  float: left;
+}
+
+#btnVerwerfen {
+  float: right;
+}
+
+.table-header {
+  background-color: #ffaa5b;
+}
+
+.table-row {
+  background-color: rgba(249,175,107,0.52);
+}
+
