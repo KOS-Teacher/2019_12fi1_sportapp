@@ -4,18 +4,22 @@
   require("db_controller.php");
   header('Content-type: application/json');
 
-  // $request = $_GET["delete"];
-  // $klasse = new Klasse;
-  // $klasse->DeleteKlasse($request);
-
-  $request = $_GET["q"];
-
-  $Name_Klasse = "12FI1";
-  $Anzahl_Schueler = 0;
+  if (empty($_GET["delete"])) {
+    $request = $_GET["delete"];
+    $klasse = new Klasse;
+    $klasse->DeleteKlasse($request);
+  }
+  $request = $_GET["n"];
+  $Name_Klasse = $_GET["k"];
+  $Anzahl_Schueler = $_GET["s"];
   $schueler = new Schueler;
   $klasse = new Klasse;
 
- if ($request = "neuKlasseErstellen") {
+  echo "Test1: " . $request;
+  echo "Test2: " . $Name_Klasse;
+  echo "Test3: " . $Anzahl_Schueler;
+
+ if ($request = "neueKlasseErstellen") {
       $col = $Anzahl_Schueler;
       $col2 = $Name_Klasse;
       $klasse->SetKlasse($col2, $col);
@@ -25,8 +29,6 @@
       $col3 = 0;
       $col4 = 0;
       $schueler->SetSchueler($col1, $col2, $col3, $col4);
-      echo "Schüler_ID: " . $col1 . " Klasse: " . $col2 . " Punkte: " . $col3 . " Krank: " . $col4;
-      echo "      ";
   }
  }
 
