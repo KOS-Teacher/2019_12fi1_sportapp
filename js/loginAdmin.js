@@ -1,4 +1,4 @@
-
+       var jsonobj2
 
        var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
@@ -12,7 +12,7 @@
                var jsonobj = JSON.parse(result);
 
                
-               
+               jsonobj2 = jsonobj
 
                 var cboStation = document.getElementById("cboStation");
              
@@ -70,14 +70,14 @@
                         if (result) {
                           
                           
-                          for(j = 0; j < jsonobj.length; j++){          
+                          for(j = 0; j < jsonobj2.length; j++){          
                             
 
-                             if(jsonobj[j].Station_Name == station && jsonobj[j].Station_Passwort == txtPasswort){
+                             if(jsonobj2[j].Station_Name == station && jsonobj2[j].Station_Passwort == txtPasswort){
 
-                              var punkte = jsonobj[j].Station_Punkte;  
+                              var punkte = jsonobj2[j].Station_Punkte;  
 
-                              var id =  jsonobj[j].Station_ID;
+                              var id =  jsonobj2[j].Station_ID;
 
 
                               location.href = "stationscannen.php?stationname=" + station + "&stationpunkte=" + punkte + "&stationid=" + id;}
@@ -86,7 +86,7 @@
 
                              
 
-          
+    
                          }
                          else
                              {

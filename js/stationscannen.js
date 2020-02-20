@@ -17,10 +17,10 @@
    var stationpunkte = document.getElementById("stationpunkte");
 
 
-   stationname.value = getUrlParameterByName('stationname');
+   stationname.innerHTML = getUrlParameterByName('stationname');
 
 
-   stationpunkte.value = getUrlParameterByName('stationpunkte');
+   stationpunkte.innerHTML = getUrlParameterByName('stationpunkte');
 
 
    var stationid =  getUrlParameterByName('stationid');
