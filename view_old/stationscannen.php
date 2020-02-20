@@ -13,15 +13,18 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-md">
         <div class="container">
+<<<<<<< HEAD
             <div class="collapse navbar-collapse" id="navcol-1">
             <button class="btn btn-green" id="btnAbsenden" onclick="absenden()" type="button" style="width: 125px;">Logout</button>
             </div>
             
+=======
             <div class="collapse navbar-collapse d-flex justify-content-center" id="navcol-1">
                 <div style="width: 360px">
                     <button class="btn btn-red" id="btnLogout" onclick="logout()" type="button" style="width: 125px; float: right;">Logout</button>
                 </div>
             </div>
+>>>>>>> 9d2a15618e1ff2b471d82463c5dbafe241bd25d2
         </div>
     </nav>
     <main>
@@ -29,11 +32,11 @@
             <div class="title" style="height: auto;width: 360px;">
                 <div style="float: left;margin-left: 30px;width: 120px;">
                     <p class="label" style="font-weight: bold;font-size: 1.4em;">Station:</p>
-                    <p class="text" id = "stationname" style="max-width: 120px;"></p>
+                    <p class="text" id = "stationname" style="max-width: 120px;">Brettspiele</p>
                 </div>
                 <div style="float: right;margin-right: 30px;width: 120px;">
                     <p class="label"  style="font-weight: bold;font-size: 1.4em;">Punkte:</p>
-                    <p class="text" id = "stationpunkte"></p>
+                    <p class="text" id = "stationpunkte">3</p>
                 </div>
             </div>
         </div>

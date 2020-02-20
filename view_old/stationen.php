@@ -63,11 +63,15 @@
                 </div>
 
 
-                <div><button class="btn btn-primary btn-menu" id="btnNeu" onclick="admNeueStation()" type="button" style="width: 180px;padding-right: 8px;margin-right: 120px;margin-left: 550px;background-color: #f4b183;">Neue Station anlegen</button>
+                <div><button class="btn btn-primary btn-menu" id="btnNeu" onclick="admNeueStation()" type="button" style="width: 180px;padding-right: 8px;margin-right: 225px;margin-left: 550px;background-color: #f4b183;">Neue Station anlegen</button>
                 
                 
                 
-                <button class="btn btn-primary btn-menu" id="btnBearbeiten" onclick="admBearbeiten()" type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 100px;background-color: #f4b183;">Bearbeiten</button></div>
+<<<<<<< HEAD
+                <button class="btn btn-primary btn-menu" id="btnBearbeiten type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
+=======
+                <button class="btn btn-primary btn-menu" id="btnBearbeiten" onclick="admBearbeiten()" type="button" style="width: 100px;padding-right: 8px;margin-right: 0px;margin-left: 1px;background-color: #f4b183;">Bearbeiten</button></div>
+>>>>>>> 3d4f8d5d8b99b9d21b805647b3115e15f968503a
             </form>
         </div>
     </main>

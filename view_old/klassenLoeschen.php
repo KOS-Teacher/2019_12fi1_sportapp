@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-   
+    <!-- AJAX mit PHP Integration -->
+    <script type="text/javascript" src="../js/klassenLoeschen.js"></script>
 </head>
 
 <body>
@@ -37,9 +38,6 @@
     <footer></footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
-     <!-- AJAX mit PHP Integration -->
-     <script type="text/javascript" src="../js/klassenLoeschen.js"></script>
 </body>
 
 </html>
