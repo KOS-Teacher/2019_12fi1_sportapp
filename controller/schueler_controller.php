@@ -3,13 +3,21 @@
   require("db_controller.php");
   header('Content-type: application/json');
 
-$request = $_GET["q"];
+  if ($_GET["a"] = TRUE) {
+    $request = $_GET["a"];
+  };
 
-if ($request = "") {
-  $station = new Schueler;
-$test = $station->getSchueler();
-echo ($test);
-}
+// if ($request = "auswertungen") {
+//   $schueler = new Schueler;
+// $test = $schueler->getSchueler();
+// echo ($test);
+// }
+
+$bestSchueler = new Schueler;
+$bestSchueler = $bestSchueler->getBestSchueler();
+echo $bestSchueler;
+
+
 
 
   
