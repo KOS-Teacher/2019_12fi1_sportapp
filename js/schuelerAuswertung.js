@@ -21,11 +21,11 @@
 
                         var table1 = document.getElementById("table1");
 
-                        var table2 = document.getElementById("table2");
+                        
                         
                         var i = 1;
 
-                        var h = 1;
+                       
 
                         
 
@@ -43,7 +43,59 @@
 
                          }
 
+                           
+                                   
+                           
+                        }
 
+
+                    //   location.href = "admin_menu.php";    
+                 }
+            }
+          }
+
+          xmlhttp.open("GET", "../controller/klasse_controller.php?a=" + "auswertungen");
+           
+            xmlhttp.send();
+
+            
+        
+                   
+           
+            
+
+
+            var xmlhttp = new XMLHttpRequest();
+
+             xmlhttp.onreadystatechange = function() {
+
+                 if (this.readyState == 4 && this.status == 200) {
+
+                      
+
+                      var result = this.responseText;
+
+
+                      if (result) {
+                          
+                          
+                        var jsonobj = JSON.parse(result);
+
+                       
+
+                        var table2 = document.getElementById("table2");
+                        
+                       
+
+                        var h = 1;
+
+                        
+
+                       for(j = 0; j < jsonobj.length; j++){        
+
+                         
+
+                       
 
 
                          if (jsonobj[j].Station_Name == "table2"){        // table2 = Auswertung Sch�ler
@@ -62,15 +114,11 @@
                         }
 
 
-                      location.href = "admin_menu.php";    
+                    //   location.href = "admin_menu.php";    
                  }
             }
           }
 
-            xmlhttp.open("GET", "../controller/getlogin_controller.php?a=" + "auswertungen");
-            xmlhttp.send();
-
-            
-        
-                   
+            xmlhttp.open("GET", "../controller/schueler_controller.php?a=" + "auswertungen");
            
+            xmlhttp.send();
