@@ -36,5 +36,22 @@ class Schueler {
         $db->query("DELETE FROM schueler WHERE 'Schueler_ID'= {$id}");
         
       }
+      function setSchuelerPunkte($Punkte, $Scan) {
+        global $db;
+        $stmt= $db->query("UPDATE schueler SET Schueler_Punkte = Schueler_Punkte + {$Punkte} WHERE Schueler_ID = '{$Scan}'");
+      }
+      function getSchuelerID($Scan) {
+        global $db;
+        $stmt= $db->query("SELECT Schueler_ID FROM schueler WHERE Schueler_ID = '{$Scan}'");
+        return $stmt;
+      }
+      function getSchuelerKlasseID($Scan) {
+        global $db;
+        $stmt= $db->query("SELECT Klasse_ID FROM schueler WHERE Schueler_ID = '{$Scan}'");
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+          return $row;
+      };
+      
+      }
 
   }
