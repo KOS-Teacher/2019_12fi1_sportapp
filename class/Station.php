@@ -13,5 +13,10 @@ class Station {
         $myJSON = json_encode($daten);
         return $myJSON;
       }
+
+
+
+
+
      
 };

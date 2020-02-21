@@ -66,7 +66,7 @@
            }
       };
 
-      xmlhttp.open("GET", "../controller/getlogin_controller.php?schulernummer1=" + txtSchuelerNr1 + "&schulernummer2="  + txtSchuelerNr2 + "&schulernummer3=" + txtSchuelerNr3 + "&schulernummer4=" + txtSchuelerNr4 + "&schulernummer5=" + txtSchuelerNr5 + "&station_id="  + stationid );   // <------- PHP : schulernummer + station_id , zurück ob es geklappt hat aslo boolean
+      xmlhttp.open("GET", "../controller/administrator_controller.php?q=" + "punktePlus" + "&schulernummer1=" + txtSchuelerNr1 + "&schulernummer2="  + txtSchuelerNr2 + "&schulernummer3=" + txtSchuelerNr3 + "&schulernummer4=" + txtSchuelerNr4 + "&schulernummer5=" + txtSchuelerNr5 + "&station_id="  + stationid + "&station_punkte" + stationpunkte );   // <------- PHP : schulernummer + station_id , zurück ob es geklappt hat aslo boolean
 
       xmlhttp.send();
 

@@ -13,7 +13,7 @@ class Klasse {
       }
       function SetKlasse($col2, $col) {
         global $db;
-        $stmt= $db->query("INSERT INTO Klasse (`Klasse_ID`, `Klasse_Anzahlschueler`)VALUES ('{$col2}', '{$col}')");
+        $stmt= $db->query("INSERT INTO Klasse (`Klasse_ID`, `Klasse_Anzahlschueler`)VALUES ('{$col2}', '{$col}', '0')");
         
       }
       function UpdateKlasse($id, $col2) {
@@ -31,12 +31,12 @@ class Klasse {
         } else {
           echo "Deletion complete";
         }
-        // try {
-        //   $db->exec("DELETE FROM Klasse WHERE Klasse_ID = '{$id}'"); //funktioniert
-        
-        // } catch (PDOException $e) {
-        //   echo $e->getMessage();
-        // }
+      }
+        function setKlassePunkte($Punkte, $KlasseID) {
+          global $db;
+          $stmt= $db->query("UPDATE Klasse SET Klasse_Punkte = Klasse_Punkte + {$Punkte} WHERE Klasse_ID = '{$KlasseID}'");
+          
+
       }
 
 
