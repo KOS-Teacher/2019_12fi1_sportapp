@@ -7,15 +7,13 @@
     $request = $_GET["a"];
   };
 
-// if ($request = "auswertungen") {
-//   $schueler = new Schueler;
-// $test = $schueler->getSchueler();
-// echo ($test);
-// }
+if ($request = "auswertungen") {
+  $bestSchueler = new Schueler;
+  $bestSchueler = $bestSchueler->getBestSchueler();
+  echo $bestSchueler;
+}
 
-$bestSchueler = new Schueler;
-$bestSchueler = $bestSchueler->getBestSchueler();
-echo $bestSchueler;
+
 
 
 
