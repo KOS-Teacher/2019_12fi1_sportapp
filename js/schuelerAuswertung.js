@@ -29,24 +29,33 @@
 
                         
 
+                        var cell = 1;
+
+
+                        var row = 1;
+
+                        
+
                        for(j = 0; j < jsonobj.length; j++){        
 
-                         
 
-                         if (jsonobj[j].Station_Name == "table1"){         // table1 = Auswetung Klassen
-                            
-                              table1.rows[j].cells[i].innerHTML =  jsonobj[j].Station_Name; 
+                              table1.rows[row].cells[cell].innerHTML =  jsonobj[j].Klasse_ID;  
 
-                              i++;
-
-                              table1.rows[j].cells[i].innerHTML =  jsonobj[j].Punkte; 
-
-                         }
-
-                           
-                                   
+                              row++;
+   
                            
                         }
+
+                        row = 1;
+
+                        cell = 2;
+
+                        for(j = 0; j < jsonobj.length; j++){        
+
+                               table1.rows[row].cells[cell].innerHTML =  jsonobj[j].Klasse_Punkte / jsonobj[j].Klasse_Anzahlschueler;  
+                               row++;
+     
+                         }
 
 
                     //   location.href = "admin_menu.php";    
@@ -110,7 +119,7 @@
 
                         for(j = 0; j < jsonobj.length; j++){        
 
-                               table2.rows[row].cells[cell].innerHTML =  jsonobj[j].Klasse_ID;  
+                               table2.rows[row].cells[cell].innerHTML =  jsonobj[j].Schueler_Punkte;  
                                row++;
      
                          }

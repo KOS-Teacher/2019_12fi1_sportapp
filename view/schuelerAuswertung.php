@@ -64,7 +64,7 @@
                                 <tr>
                                     <th>Platz</th>
                                     <th>Schülernummer</th>
-                                    <th>Klasse</th>
+                                    <th>Punkte</th>
                                 </tr>
                             </thead>
                             <tbody>
