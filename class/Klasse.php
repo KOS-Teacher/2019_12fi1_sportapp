@@ -11,6 +11,17 @@ class Klasse {
         $myJSON = json_encode($daten);
         return $myJSON;
       }
+
+    function getBestKlasse() {
+      global $db;
+      $stmt= $db->query("SELECT * FROM klasse ORDER BY Klasse_Punkte DESC LIMIT 3");
+      while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+          $daten[] = $row;
+      };
+      $myJSON = json_encode($daten);
+      return $myJSON;
+    }
+
       function SetKlasse($col2, $col) {
         global $db;
         $stmt= $db->query("INSERT INTO Klasse (`Klasse_ID`, `Klasse_Anzahlschueler`)VALUES ('{$col2}', '{$col}')");
