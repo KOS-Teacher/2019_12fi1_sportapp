@@ -3,60 +3,60 @@
           
 
             
-             var xmlhttp = new XMLHttpRequest();
+          //    var xmlhttp = new XMLHttpRequest();
 
-             xmlhttp.onreadystatechange = function() {
+          //    xmlhttp.onreadystatechange = function() {
 
-                 if (this.readyState == 4 && this.status == 200) {
+          //        if (this.readyState == 4 && this.status == 200) {
 
                       
 
-                      var result = this.responseText;
+          //             var result = this.responseText;
 
 
-                      if (result) {
+          //             if (result) {
                           
                           
-                        var jsonobj = JSON.parse(result);
+          //               var jsonobj = JSON.parse(result);
 
-                        var table1 = document.getElementById("table1");
+          //               var table1 = document.getElementById("table1");
 
                         
                         
-                        var i = 1;
+          //               var i = 1;
 
                        
 
                         
 
-                       for(j = 0; j < jsonobj.length; j++){        
+          //              for(j = 0; j < jsonobj.length; j++){        
 
                          
 
-                         if (jsonobj[j].Station_Name == "table1"){         // table1 = Auswetung Klassen
+          //                if (jsonobj[j].Station_Name == "table1"){         // table1 = Auswetung Klassen
                             
-                              table1.rows[j].cells[i].innerHTML =  jsonobj[j].Station_Name; 
+          //                     table1.rows[j].cells[i].innerHTML =  jsonobj[j].Station_Name; 
 
-                              i++;
+          //                     i++;
 
-                              table1.rows[j].cells[i].innerHTML =  jsonobj[j].Punkte; 
+          //                     table1.rows[j].cells[i].innerHTML =  jsonobj[j].Punkte; 
 
-                         }
+          //                }
 
                            
                                    
                            
-                        }
+          //               }
 
 
-                    //   location.href = "admin_menu.php";    
-                 }
-            }
-          }
+          //           //   location.href = "admin_menu.php";    
+          //        }
+          //   }
+          // }
 
-          xmlhttp.open("GET", "../controller/klasse_controller.php?a=" + "auswertungen");
+          // xmlhttp.open("GET", "../controller/klasse_controller.php?a=" + "auswertungen");
            
-            xmlhttp.send();
+          //   xmlhttp.send();
 
             
         
@@ -89,27 +89,26 @@
 
                         var h = 1;
 
+                        var i = 1;
+
                         
 
                        for(j = 0; j < jsonobj.length; j++){        
 
-                         
-
-                       
+                         //if (jsonobj[j].Station_Name == "table2"){        // table2 = Auswertung Sch�ler
 
 
-                         if (jsonobj[j].Station_Name == "table2"){        // table2 = Auswertung Sch�ler
+                              table2.rows[j+1].cells[h].innerHTML =  jsonobj[j].Schueler_ID; 
 
+                              h++;
+                              
 
-                              table2.rows[j].cells[h].innerHTML =  jsonobj[j].Schuler_Nummer; 
+                              table2.rows[j+2].cells[h].innerHTML =  jsonobj[j].Klasse_ID; 
 
-                              i++;
+                              j--;
 
-                              table2.rows[j].cells[h].innerHTML =  jsonobj[j].Station_Name; 
-
-                         }
-                           
-                                   
+                         //}
+                                  
                            
                         }
 

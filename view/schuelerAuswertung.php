@@ -27,7 +27,7 @@
             <div style="padding-top: 5%;padding-bottom: 5%;width: 360px;">
                 <div class="d-flex justify-content-center" style="margin-bottom: 93px;">
                     <div class="table-responsive" style="background-color: #fefefe;">
-                        <table class="table">
+                        <table class="table" id = "table1">
                             <thead class="table-header">
                                 <tr>
                                     <th>Platz</th>
@@ -59,7 +59,7 @@
                 </div>
                 <div>
                     <div class="table-responsive">
-                        <table class="table">
+                        <table class="table" id = "table2">
                             <thead class="table-header">
                                 <tr>
                                     <th>Platz</th>
